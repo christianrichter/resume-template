@@ -2,15 +2,15 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
+- project: RTL+
+  role: Solution Architect, Developer
+  duration: Jul, 2020 &mdash; Present
   # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+  description: Design and implementation of a cloud-based data ware house for processing user data (AWS Cloud, Kubernetes, Docker, Spark, Kafka, Terraform, Python, Kustomize, GitLab). <ul class="resume-item-list"><li>Integration of Airflow as a workflow engine</li><li>Integration of Google Spark K8s Operator as a runtime environment for ETL processes</li><li>Building a team to implement ETL processes</li><li>Advice on general data architecture</li></ul>
 
 # Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
+- project: Volkswagen AG
+  role: Solution Architect, Developer
+  duration: Jan, 2019 &mdash; Mar, 2020
   # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+  description: Design and implementation of a cloud- based data warehouse for evaluation of vehicle data, Design and implementation of data science environment (AWS Cloud, Lambda, IAM, Airflow, Kubernetes, Terraform, Python). <ul class="resume-item-list"><li>Extension and production of a prototype for mass data processing</li><li>Construction and commissioning of a CI / CD pipeline</li><li>Conception & implementation of project structure, release management</li><li>Construction ETL pipeline for data validation and collection</li></ul>
