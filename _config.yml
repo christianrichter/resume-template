@@ -14,7 +14,7 @@ resume_name:                    "Christian Richter"
 resume_title:                   "Solution Architect - Data, Cloud & Container"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "notready@mailraum.de"
+resume_contact_email:           "notready@mailraum.de?subject=Inquiry / Anfrage"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "+49 (0) 30 4193 6978"
