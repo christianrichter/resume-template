@@ -1,7 +1,11 @@
 # Skills
 # Organizational leadership
-- skill: Building backends
-  description: I thrive on building new things from scratch, contributing best practices from previous projects on how to build and deploy data processing software.
+- skill: Building data driven backends
+  description: I thrive on building new things from scratch, contributing best practices from previous projects and experience on how to build, deploy and operate data processing software and infrastructure.
+
+# Requiremenrs engineering
+- skill: Requirements engineering
+  description: Understandng customer needs and business requirements and translating them into infrastructure and software is one of my core competency used throughout the lifetime of every project. My focus on the essential core value proposition provides value to the customer early on.
 
 # Enabling team members to efficiently contribute
 - skill: Enabling teams
@@ -9,4 +13,4 @@
 
 # Building data processing foundation
 - skill: Using technology
-  description: Having worked on more than 20 projects allowed me to learn and use a broad variety of tools and services to build data driven software. This understanding helps in chosing the right tools and technologies for the task given.
+  description: Having worked on more than 20 projects allowed me to learn and use a broad variety of tools and services to design and build data driven backend processes. This understanding helps me in choosing the right tools and technologies for the task given.
