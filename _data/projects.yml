@@ -9,12 +9,13 @@
   technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
   # url: "#"
   description: >
-    Design and implementation of a cloud-based data ware house for processing user data.
+    Design and implementation of a cloud-based data ware house for processing user related data.
     <ul class="resume-item-list">
-    <li>Integration of Airflow as a workflow engine</li>
-    <li>Integration of Google Spark K8s Operator as a runtime environment for ETL processes</li>
-    <li>Building a team to implement ETL processes</li>
-    <li>Advice on general data architecture</li>
+    <li>Implemented workflows to fetch data from various third-party providers</li>
+    <li>Building and enabling a team to create new ETL processes</li>
+    <li>Realtime integration of a market automation software suite</li>
+    <li>Implemented modern ETL processing environment using Airflow, Spark and Kubernetes</li>
+    <li>General advice on data architecture and data management</li>
     </ul>
 
 # swarovski
@@ -25,12 +26,13 @@
   # url: "#"
   technologies: AWS Cloud, Kubernetes, Kafka, Spark, Bamboo, Java, Docker, Terraform
   description: >
-    Concept and implementation of infrastructure for sensor data processing, Extension of an existing data science environment
+    Design of AWS managed infrastructure platform for sensor data processing, extension of an existing data science environment.
     <ul class="resume-item-list">
-    <li>Advice on conception and tools for building a Kubernetes- based infrastructure for sensor data processing</li>
-    <li>Conception and construction of infrastructure on Kubernetes (Kafka Cluster, Spark Framework, Zookeeper, ZK Manager)</li>
-    <li>Conception and construction of the ETL pipeline for data collection</li>
-    <li>Conception and construction of CI / CD pipeline with Bamboo & Kubernetes</li></ul>
+    <li>Advice on design and tools for building a Kubernetes based infrastructure platform for sensor data processing</li>
+    <li>Design and implementation of infrastructure components on Kubernetes</li>
+    <li>Design and implementation of the ETL pipeline for data collection</li>
+    <li>Design and implementation of CI/CD pipeline with Bamboo & Kubernetes</li>
+    </ul>
 
 # volkswagen
 - project: Data analytics on car measurement data
@@ -40,13 +42,14 @@
   # url: "#"
   technologies: AWS Cloud, Lambda, IAM, Airflow, Kubernetes, Terraform, Python, Jenkins
   description: >
-    Design and implementation of a cloud- based data warehouse for evaluation of vehicle data.
+    Design and implementation of a cloud-based data warehouse for evaluation of vehicle data.
     Design and implementation of a data science environment.
     <ul class="resume-item-list">
-    <li>Extension and production of a prototype for mass data processing</li>
-    <li>Construction and commissioning of a CI / CD pipeline</li>
-    <li>Conception & implementation of project structure, release management</li>
-    <li>Construction ETL pipeline for data validation and collection</li></ul>
+    <li>Extented a prototype and put into operational readiness for a production environment</li>
+    <li>Design and implementation of a CI / CD pipeline</li>
+    <li>Setup of project structure and release management</li>
+    <li>Implemented various ETL pipelines for car measurement data collection, validation and transformation</li>
+    </ul>
 
 
 # template
@@ -57,13 +60,14 @@
   # url: "#"
   technologies: AWS Cloud, Kubernetes, Spark, R, NiFi, Terraform, Docker, Jupyter NB
   description: >
-    Conception and implementation of a cloud- based dataware house /Data science environment
+    Design and implementation of a cloud-based dataware house & data science environment.
     <ul class="resume-item-list">
-    <li>Conception of a dynamically scalable data ware house</li>
-    <li>Implementation of infrastructure in Terraform (Infrastructure as Code)</li>
+    <li>Designing data warehouse architecture & data storage strategies</li>
+    <li>Architecture proposal of a dynamically scalable data warehouse</li>
+    <li>Implementation of infrastructure compoenents in Terraform & Kubernetes</li>
     <li>Implementation of infrastructure components in Kubernetes</li>
-    <li>Modeling DWH & data storage</li>
-    <li>Development of ETL pipelines for data collection</li></ul>
+    <li>Development of ETL pipelines for data collection</li>
+    </ul>
 
 
 # aixigo
@@ -72,16 +76,16 @@
   role: System Architect
   duration: May, 2017 &mdash; Dec, 2018
   # url: "#"
-  technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jekins, Principal IT architecture
+  technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jekins
   description: >
-    Support conception and implementation of a micro service architecture
+    Support conception and implementation/migration of a monolith into a micro service architecture.
     <ul class="resume-item-list">
-    <li>Alignment and coordination div. Teams respect. technology usage</li>
-    <li>Design and implementation of central elements (De / Serializer, Data Pipe Design, Error Handling, Message Handling, Database Design)</li>
+    <li>Alignment and coordination of different teams regarding technology usage</li>
     <li>Introduction of Kafka as the central message bus for micro service communications</li>
     <li>Introduction of LiquiBase for database schema management</li>
     <li>Professional / technical support for a specific micro service</li>
     </ul>
+
 
 # open grid
 - project: Big Data vendor evaluation
@@ -93,7 +97,7 @@
   description: >
     Support in evaluating big data providers
     <ul class="resume-item-list">
-    <li>Acquisition and documentation of the technical requirements for setting up and operating an Apache Hadoop- based data warehouse</li>
+    <li>Acquisition and documentation of the technical requirements for setting up and operating an Apache Hadoop based data warehouse</li>
     <li>Obtaining offers from various providers, preparing information for decision-making</li>
     <li>Implementation of a prototype for data collection</li>
     </ul>
@@ -107,11 +111,11 @@
   # url: "#"
   technologies: Spark, SparkR, Hadoop, Hive, Jupyter, AWS Cloud, R, Bamboo, Terraform
   description: >
-    Design and implementation of a cloud based big data warehouse in the AWS Cloud for market research analytics.
+    Design and implementation of a cloud-based big data warehouse in the AWS Cloud for market research analytics.
     <ul class="resume-item-list">
     <li>Technical project management</li>
-    <li>Conception of AWS cloud infrastructure</li>
-    <li>Implementation of data pipelines</li>
+    <li>Design of an architecture based on AWS cloud infrastructure and managed services</li>
+    <li>Implementation of ETL data pipelines</li>
     <li>Development of data warehouse / workflow management</li>
     <li>Data preparation / process management</>
     </ul>
@@ -128,8 +132,9 @@
     <ul class="resume-item-list">
     <li>Conducting a 3-day workshop</li>
     <li>Introduction to Big Data / Hadoop ecosystem</li>
-    <li>Practical exercise using big data in the AWS Cloud</li>
+    <li>Practical exercise using big data tools in the AWS Cloud</li>
     </ul>
+
 
 # helix leisure
 - project: Architecture Review
@@ -139,12 +144,12 @@
   # url: "#"
   technologies: Hadoop, Spark, AWS Cloud, Scala, MapReduce, JCascalog, RedShift
   description: >
-    Architecture review and conception and implementation of the streaming layer
+    Architecture review and design and implementation of a realtime aggregator for machine statistics.
     <ul class="resume-item-list">
-    <li>Review and assessment of existing architecture and data model</li>
-    <li>Implementation workshop data management / Lambda architecture</li>
-    <li>Conception and implementation of realtime layer with Spark RT</li>
-    <li>Development of concept and implementation for the integration of realtime layer and batch layer</li></ul>
+    <li>Review and assessment of the existing architecture and data model design</li>
+    <li>Implementation workshop data management/Lambda architecture</li>
+    <li>Design and implementation of a realtime layer with Spark Streaming</li>
+    </ul>
 
 # otto
 - project: ETL Pipelines
@@ -154,27 +159,27 @@
   # url: "#"
   technologies:
   description: >
-    Support in the construction of ETL routes for a Hadoop based DWH
+    Support in the development of ETL processes on a Hadoop based DWH.
     <ul class="resume-item-list">
     <li>Planning and implementation of a hive export module</li>
-    <li>Implementation of the Kafka & Redis export module as part of an open source project</li>
-    <li>Implementation analysis algorithm for the evaluation of click streams</li>
+    <li>Implementation of a Kafka & Redis export module as part of an open source project</li>
+    <li>Implementation of an analysis algorithm for click stream analytics</li>
     </ul>
 
 
 # gfk
-- project: CI / CD Pipelines
+- project: CI/CD Pipelines
   industry: Market research
   role: Solution Architect, Developer
   duration: Dec, 2015 &mdash; Aug, 2016
   # url: "#"
   technologies: AWS Cloud, Hadoop, Spark, Bamboo, Git, Terraform, Vagrant, InfluxDB
   description: >
-    Conception and construction of continuous deployment / delivery pipeline for data-driven application in a cloud environment
+    Design and implementation of a continuous deployment & delivery pipeline for data-driven applications in cloud environments.
     <ul class="resume-item-list">
-    <li>Planning and implementation of a big data infrastructure in the AWS Cloud</li>
-    <li>Planning and implementation of a continuous deployment pipeline</li>
-    <li>Technical management of an internal team</li>
+    <li>Design and implementation of a big data infrastructure in the AWS Cloud</li>
+    <li>Design and implementation of a continuous deployment pipeline</li>
+    <li>Technical management of an customer internal team</li>
     </ul>
 
 # radioopt
@@ -190,9 +195,7 @@
     <li>Planning and implementation of the cluster infrastructure</li>
     <li>Evaluation of various input formats with regard to performance</li>
     <li>Preparation, execution and documentation of load tests</li>
-    <li></li></ul>
-
-
+    </ul>
 
 # technicolor
 - project: Data analytics on wifi device data
@@ -202,12 +205,13 @@
   # url: "#"
   technologies: Hadoop, Samza, Spark, Kafka, Java, ETL, AWS
   description: >
-    Conception and implementation of a big data system for batch and real-time data processing
+    Design and implementation of a big data system for batch and real-time data processing of machine generated data.
     <ul class="resume-item-list">
     <li>Planning and implementation of the deployment environment</li>
     <li>Evaluation of various technologies for data acquisition / data processing</li>
+    <li>Implementation of a distributed, fail-safe high throughput messaging and analysis system for machine data (Lambda Architecture)</li>
     <li>Technical management of a team</li>
-    <li>Implementation of a distributed, fail-safe high throughput messaging and analysis system for machine data (Lambda Architecture)</li></ul>
+    </ul>
 
 # ubisoft
 - project: Game Analytics
@@ -217,10 +221,10 @@
   # url: "#"
   technologies: Hadoop, Map / Reduce, Kafka, Hive, ETL, Java, Linux
   description: >
-    Design and implementation of Hadoop -based data warehouse for Game Analytics
+    Design and implementation of Hadoop based data warehouse for Game Analytics.
     <ul class="resume-item-list">
     <li>Planning and implementation of a data warehouse</li>
-    <li>Evaluation of different approaches to data collection</li>
+    <li>Evaluation of different approaches for data collection</li>
     <li>Selection of suitable technologies</li>
     <li>Technical management / coordination of a distributed team (GER, CN, CAN)</li>
     <li>Implementation of a distributed, fail-safe high throughput messaging system</li>
@@ -235,24 +239,25 @@
   # url: "#"
   technologies: Hadoop, OpenStack, Opscode Chef, Java, Linux
   description: >
-    Conception and implementation of a big data infrastructure in virtualized environments
+    Design and implementation of a big data infrastructure in virtualized environments.
     <ul class="resume-item-list">
     <li>Planning and implementation of a big data deployment infrastructure</li>
-    <li>Implementation deployment process for Hadoop Cluster on Demand in a virtualized environment</li>
-    <li>Prototype implementation of various algorithms in the Map / Reduce Framework</li>
+    <li>Implementation deployment process for Hadoop Cluster on demand in a virtualized environment</li>
+    <li>Prototype implementation of various algorithms with the map/reduce framework</li>
     </ul>
 
 # gfk
-- project: Data analytics on mobile phone data
+- project: Data analytics on geo location data
   industry: Market research
   role: Solution Architect / Developer
   duration: Nov, 2012 &mdash; Aug, 2015
   # url: "#"
   technologies: Apache Hadoop, Hive, Flume, Java, Spring, Puppet, Ubuntu Linux, AWS
   description: >
-    Design and implement a big data architecture for evaluating telecommunications data
+    Design and implementation of a big data architecture for evaluating telecommunications data.
     <ul class="resume-item-list">
-    <li>Planning and implementation of the network (VPC)</li>
-    <li>Planning and implementation of a Hadoop cluster (100TB capacity)</li>
+    <li>Planning and implementation of the network setup</li>
+    <li>Planning and implementation of a medium sized Hadoop cluster</li>
     <li>Set up deployment process, including monitoring</li>
-    <li>Implementation of a data integration framework for the storage of approx. 300 GB of data per day</li></ul>
+    <li>Implementation of a data integration framework for high volume data storage</li>
+    </ul>
