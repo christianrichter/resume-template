@@ -11,6 +11,14 @@
 
       <header class="page-header">
 
+        <div class="header-menu">
+          <a class="header-menu-item" href="#experience">Experience</a>
+          <a class="header-menu-item" href="#projects">Projects</a>
+          <a class="header-menu-item" href="#skills">Skills</a>
+          <a class="header-menu-item" href="#references">References</a>
+          <a class="header-menu-item" href="#education">Education</a>
+        </div>
+
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
         <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
@@ -53,7 +61,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2 id="experience">Experience</h2>
         </header>
 
         {% for job in site.data.experience %}
@@ -73,7 +81,7 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2 id="projects">Projects</h2>
         </header>
 
         {% for project in site.data.projects %}
@@ -96,7 +104,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Skills</h2>
+          <h2 id="skills">Skills</h2>
         </header>
         {% for skill in site.data.skills %}
         <div class="resume-item">
@@ -114,7 +122,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>References</h2>
+          <h2 id="references">References</h2>
         </header>
         {% for reference in site.data.references %}
         <div class="resume-item">
@@ -131,7 +139,7 @@
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Education</h2>
+          <h2 id="education">Education</h2>
         </header>
 
         {% for education in site.data.education %}

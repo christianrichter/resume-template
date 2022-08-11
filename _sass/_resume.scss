@@ -74,6 +74,18 @@
   }
 }
 
+.header-menu {
+    @include sans;
+    margin: 10px 0px 30px 0px;
+    text-align: center;
+
+    .header-menu-item {
+        margin: 30px;
+        color: #333;
+        text-decoration: none;
+    }
+}
+
 .icon-links {
   margin: 0;
   padding: 0;
