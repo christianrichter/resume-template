@@ -1,0 +1,10 @@
+# Johannes Kunde @ GfK
+- reference: GfK
+  description: "\"Chistian's expertise with distributed and AWS based infrastructures helped us big time when we needed a solution to orchestrate our servers and services, by integrating Terraform into our application lifecycle management.\""
+  by: Johannes Kunze - Senior Solution Architect
+
+# Christoph Safferling @ Ubisoft
+- reference: Ubisoft
+  description: "\"Thanks to the use of big data technologies for our tracking backend, we are now able to analyze the behavior of our users much more precisely and to significantly improve the game play of our games.\""
+  # description: "Dank der Verwendung von Big Data Technologien für unser Tracking Backend sind wir jetzt in der Lage, das Verhalten unserer Nutzer deutlich genauer zu analysieren und das Game Play unserer Spiele entscheidend zu verbessern."
+  by: Christoph Safferling - Head of Game Analytics
