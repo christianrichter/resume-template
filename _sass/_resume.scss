@@ -76,11 +76,11 @@
 
 .header-menu {
     @include sans;
-    margin: 10px 0px 30px 0px;
-    text-align: center;
+    margin: 0px 0px 30px 0px;
+    text-align: left;
 
     .header-menu-item {
-        margin: 30px;
+        margin: 0px 43px 0px 0px;
         color: #333;
         text-decoration: none;
     }

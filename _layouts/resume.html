@@ -17,6 +17,7 @@
           <a class="header-menu-item" href="#skills">Skills</a>
           <a class="header-menu-item" href="#references">References</a>
           <a class="header-menu-item" href="#education">Education</a>
+          <a class="header-menu-item" href="#services">Services</a>
         </div>
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
@@ -126,13 +127,39 @@
         </header>
         {% for reference in site.data.references %}
         <div class="resume-item">
-          <h4 class="resume-item-details">{{reference.by}}@{{ reference.reference }}</h4>
+          <h4 class="resume-item-details">{{ reference.by }}@{{ reference.reference }}</h4>
           <p class="resume-item-copy">{{ reference.description }}</p>
         </div>
         {% endfor %}
 
       </section>
       <!-- end References -->
+      {% endif %}
+
+      {% if site.resume_section_services %}
+      <!-- begin Services -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="services">Services</h2>
+        </header>
+        {% for service in site.data.services %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ service.service }}</h4>
+          <p class="resume-item-copy">{{ service.description }}</p>
+        </div>
+        {% endfor %}
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+
+
+      </section>
+      <!-- end Services -->
       {% endif %}
 
       {% if site.resume_section_education %}
