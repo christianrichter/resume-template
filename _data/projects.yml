@@ -4,7 +4,7 @@
 # rtlplus
 - project: Cloud based data warehouse
   industry: Entertainment
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Jul, 2020 &mdash; Present
   technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
   # url: "#"
@@ -37,7 +37,7 @@
 # volkswagen
 - project: Data analytics on car measurement data
   industry: Automotive
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Jan, 2019 &mdash; Mar, 2020
   # url: "#"
   technologies: AWS Cloud, Lambda, IAM, Airflow, Kubernetes, Terraform, Python, Jenkins
@@ -55,7 +55,7 @@
 # template
 - project: Data science environment
   industry: Consumer Goods
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Oct, 2017 &mdash; Nov, 2018
   # url: "#"
   technologies: AWS Cloud, Kubernetes, Spark, R, NiFi, Terraform, Docker, Jupyter NB
@@ -73,10 +73,10 @@
 # aixigo
 - project: Micro service architecture
   industry: Financial services
-  role: System Architect
+  role: System Architect / Consultant Data Strategy
   duration: May, 2017 &mdash; Dec, 2018
   # url: "#"
-  technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jekins
+  technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jenkins
   description: >
     Support conception and implementation/migration of a monolith into a micro service architecture.
     <ul class="resume-item-list">
@@ -90,7 +90,7 @@
 # open grid
 - project: Big Data vendor evaluation
   industry: Energy
-  role:  Requirements Engineer/ Solution Architect
+  role:  Requirements Engineer / Solution Architect
   duration: Mar, 2017
   # url: "#"
   technologies: Hortonworks, Cloudera, SAP Cloud, Apache NiFi, AWS Cloud, MS Azure, Terraform
@@ -106,7 +106,7 @@
 # gfk
 - project: Big Data warehouse
   industry: Market research
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Jan, 2017 &mdash; Aug, 2017
   # url: "#"
   technologies: Spark, SparkR, Hadoop, Hive, Jupyter, AWS Cloud, R, Bamboo, Terraform
@@ -154,7 +154,7 @@
 # otto
 - project: ETL Pipelines
   industry: Online retail
-  role: Solution Architect, Developer
+  role: Solution Architect / Data Engineer
   duration: Feb, 2016 &mdash; Jul, 2016
   # url: "#"
   technologies: Hadoop, Hive, Spark, Redis, Kafka, Avro, Scala, HCatalog, Schedoscope
@@ -170,7 +170,7 @@
 # gfk
 - project: CI/CD Pipelines
   industry: Market research
-  role: Solution Architect, Developer
+  role: Solution Architect / Data Engineer
   duration: Dec, 2015 &mdash; Aug, 2016
   # url: "#"
   technologies: AWS Cloud, Hadoop, Spark, Bamboo, Git, Terraform, Vagrant, InfluxDB
@@ -200,7 +200,7 @@
 # technicolor
 - project: Data analytics on wifi device data
   industry: Consumer Goods
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Jul, 2014 &mdash; Jun, 2015
   # url: "#"
   technologies: Hadoop, Samza, Spark, Kafka, Java, ETL, AWS
@@ -216,7 +216,7 @@
 # ubisoft
 - project: Game Analytics
   industry: Entertainment
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Mar, 2013 &mdash; Sep, 2014
   # url: "#"
   technologies: Hadoop, Map / Reduce, Kafka, Hive, ETL, Java, Linux
@@ -234,7 +234,7 @@
 # telekom
 - project: Hadoop on Demand
   industry: Telecommunication
-  role: Solution Architect / Developer
+  role: Solution Architect / Software Engineer
   duration: Feb, 2013 &mdash; Jun, 2014
   # url: "#"
   technologies: Hadoop, OpenStack, Opscode Chef, Java, Linux
@@ -249,7 +249,7 @@
 # gfk
 - project: Data analytics on geo location data
   industry: Market research
-  role: Solution Architect / Developer
+  role: Solution Architect / Data Engineer
   duration: Nov, 2012 &mdash; Aug, 2015
   # url: "#"
   technologies: Apache Hadoop, Hive, Flume, Java, Spring, Puppet, Ubuntu Linux, AWS
