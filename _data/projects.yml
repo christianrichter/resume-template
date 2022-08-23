@@ -5,7 +5,7 @@
 - project: Cloud based data warehouse
   industry: Entertainment
   role: Solution Architect / Data Engineer
-  duration: Jul, 2020 &mdash; Present
+  duration: Jun, 2020 &mdash; Present
   technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
   # url: "#"
   description: >
@@ -52,7 +52,7 @@
     </ul>
 
 
-# template
+# swarovski
 - project: Data science environment
   industry: Consumer Goods
   role: Solution Architect / Data Engineer
