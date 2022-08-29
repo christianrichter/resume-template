@@ -1,11 +1,11 @@
 - service: Design data-driven processes
-  description: You have data and want to use it? You have more data and want to analyze it? Let me support you in designing ETL processes and required cloud infrastructure that caters to your business needs.
+  description: I support your organization to design and develop a data strategy that aligns with the business goals and organizational structure and provide guidance in the design and implementation of ETL processes and required cloud infrastructure.
 
 - service: Rapid project setup
-  description: If you are planning a new project and need help getting started I'm ready to support you and your team. After drafting an initial concept based on the business requirements, I can help in setting up cloud infrastructure, CI/CD pipelines and ETL processes.
+  description: If you are planning a new project and need help getting started I'm ready to support you and your team. After drafting an initial concept based on the business requirements, I immediately start setting up cloud infrastructure, CI/CD pipelines and ETL processes.
 
 - service: Architecture review
-  description: If you run into performance issues with an application I can help you reviewing the architecture and find ways to improve performance, e.g. by reorganizing how data is stored and processed.
+  description: I help you to improve the performance of an application by reviewing the architecture and identifying weak spots (e.g. how data is partitioned, stored and processed) and provide suggestions for remediation.
 
 - service: Workshops
   description: I offer various workshops touching data engineering topics and cloud infrastructure best practices. Don't hesitate to get in touch to learn more about my workshop offerings.
