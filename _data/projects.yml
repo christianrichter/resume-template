@@ -1,11 +1,28 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
+# gfk
+- project: Data warehouse migration
+  industry: Market research
+  role: Solution Architect / Cloud Architect
+  duration: Jul, 2021 &mdash; Present
+  technologies: AWS Cloud, LakeFormation, Glue, EMR, Lambda, SQS, S3, Docker, Spark, Hadoop, Airflow, Terraform, Python, GitLab
+  # url: "#"
+  description: >
+    Concept & support of an on-premise data warehouse migration into the cloud.
+    <ul class="resume-item-list">
+    <li>Design and implementation of a cloud-based data warehouse based on managed AWS services</li>
+    <li>Help in migrating various data processing jobs from Oozie to Airflow</li>
+    <li>Design and implementation of deployment pipelines</li>
+    <li>Workshops and knowledge transfer</li>
+    <li>Advice on general cloud and data architecture</li>
+    </ul>
+
 # rtlplus
 - project: Cloud based data warehouse
   industry: Entertainment
   role: Solution Architect / Data Engineer
-  duration: Jun, 2020 &mdash; Present
+  duration: Jun, 2020 &mdash; Dec, 2022
   technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
   # url: "#"
   description: >
@@ -90,7 +107,7 @@
 # open grid
 - project: Big Data vendor evaluation
   industry: Energy
-  role:  Requirements Engineer / Solution Architect
+  role: Requirements Engineer / Solution Architect
   duration: Mar, 2017
   # url: "#"
   technologies: Hortonworks, Cloudera, SAP Cloud, Apache NiFi, AWS Cloud, MS Azure, Terraform
@@ -134,7 +151,6 @@
     <li>Introduction to Big Data / Hadoop ecosystem</li>
     <li>Practical exercise using big data tools in the AWS Cloud</li>
     </ul>
-
 
 # helix leisure
 - project: Architecture Review
