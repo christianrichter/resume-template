@@ -9,12 +9,12 @@
   technologies: AWS Cloud, LakeFormation, Glue, EMR, Athena, Lambda, SQS, S3, Docker, Spark, Hadoop, Airflow, Terraform, Python, GitLab
   # url: "#"
   description: >
-    Concept and support of an on-premise data warehouse migration to the cloud.
+    Concept and support of an on-premise data warehouse migration towards the cloud.
     <ul class="resume-item-list">
-    <li>Design and implementation of a cloud-based data warehouse infrastructure based on managed AWS services</li>
+    <li>Design and implementation of a cloud-based data warehouse infrastructure based on AWS Managed Services</li>
     <li>Help in migrating various data processing jobs from Cloudera to AWS Managed Services</li>
     <li>Design and implementation of deployment pipelines for testing and rollout</li>
-    <li>Workshops and knowledge transfer on cloud and data architecture and process design</li>
+    <li>Workshops and knowledge transfer on cloud and data architecture, process design</li>
     </ul>
 
 # rtlplus
