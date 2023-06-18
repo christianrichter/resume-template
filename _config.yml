@@ -14,13 +14,13 @@ resume_name:                    "Christian Richter"
 resume_title:                   "Solution Architect - Data, Cloud & Container"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "inquiry@crichter.me?subject=Inquiry / Anfrage"
+resume_contact_email:           "inquiry@crichter.io?subject=Inquiry / Anfrage"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "+49 (0) 30 4193 6978"
 resume_contact_address:         "Berlin, Germany"
 
-resume_header_contact_info:     "Berlin, Germany • +49 (0) 30 4193 6978 • inquiry@crichter.me"
+resume_header_contact_info:     "Berlin, Germany • +49 (0) 30 4193 6978 • inquiry@crichter.io"
 display_header_contact_info:    "true"
 
 resume_header_intro: "<p>System Architect/Data Engineer with more than 15 years of experience building reliable ETL pipelines on scalable cloud infrastructure. I help organizations designing and implementing fully automated, data driven processes to support the business case using modern technology and data infrastructure. How can I help you?</p>"
