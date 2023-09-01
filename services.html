@@ -1,0 +1,169 @@
+---
+layout: page
+---
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="services">AWS Cloud & Data Engineering Services</h2>
+    </header>
+
+
+    <div class="resume-item">
+
+        <h3 class="resume-item-title" itemprop="name">Focus</h3>
+
+        My focus is on building data pipelines on managed AWS infrastructure covering a wide range of topics:
+        <ul class="resume-item-list">
+            <li>Design and implementation of data ingestion and transformation pipelines</li>
+            <li>Design and implementation of a cloud-based data warehouse</li>
+            <li>Design and implementation of data driven services</li>
+            <li>Workshops and knowledge transfer on cloud and data architecture, process design</li>
+        </ul>
+
+        <h3 class="resume-item-title" itemprop="name">Examples</h3>
+
+        I work together with your team of engineers to cover your data engineering needs, e.g.:
+
+        <ul class="resume-item-list">
+            <li>Fetch data from a REST-API, transform it using AWS Glue and store the result on AWS S3</li>
+            <li>Setup AWS Managed Airflow (MWAA) to schedule and manage various data pipelines</li>
+            <li>Build complex data transformation jobs using Apache Spark on AWS EMR</li>
+            <li>Develop and integrate an AWS Lambda function to transform data on upload</li>
+            <li>Implement real-time analytics dashboard using AWS Kinesis and Spark Streaming</li>
+        </ul>
+
+        <h3 class="resume-item-title" itemprop="name">Approach</h3>
+
+
+        My approach assessing a new project is as follows:
+        <ol class="resume-item-list">
+            <li>Define Project Objectives and Requirements:</li>
+            <ul class="resume-item-list">
+                <li>Clearly outline the project's objectives and what they aim to achieve with the data processing
+                    pipeline. Understand the specific data sources, volume, variety, and velocity.
+                </li>
+                <li>Document the technical requirements, such as the need for real-time processing, batch processing,
+                    data warehousing, analytics, and reporting.
+                </li>
+            </ul>
+            <br>
+            <li>Assess Data Sources:</li>
+            <ul class="resume-item-list">
+                <li>Evaluate the quality and accessibility of the data sources. Ensure that data is available, reliable,
+                    and accessible through AWS services or connectors.
+                </li>
+            </ul>
+            <br>
+            <li>Cost Analysis:</li>
+            <ul class="resume-item-list">
+                <li>Estimate the costs associated with building and maintaining the data processing pipeline on AWS.
+                    Consider factors such as infrastructure costs, data storage, data transfer, and AWS service charges.
+                </li>
+                <li>Provide a cost-benefit analysis to help understand the return on investment (ROI) and
+                    potential cost savings compared to alternative solutions.
+                </li>
+            </ul>
+            <br>
+            <li>Technical Feasibility</li>
+            <ul class="resume-item-list">
+                <li>Determine whether the startup has the technical expertise or can acquire the necessary skills to
+                    work with AWS services effectively.
+                </li>
+                <li>Assess the compatibility of AWS services with the startup's existing technology stack and
+                    infrastructure.
+                </li>
+            </ul>
+            <br>
+            <li>Resource Availability</li>
+            <ul class="resume-item-list">
+                <li>Evaluate the availability of skilled personnel who can design, implement, and maintain the data
+                    processing pipeline on AWS.
+                </li>
+                <li>Consider whether the startup has the required hardware, software, and network resources to support
+                    the AWS infrastructure.
+                </li>
+            </ul>
+            <br>
+            <li>Risk Assessment</li>
+            <ul class="resume-item-list">
+                <li>Identify potential risks and challenges associated with building and managing data pipelines on AWS.
+                    These may include data security, compliance, scalability issues, and vendor lock-in.
+                </li>
+                <li>Develop risk mitigation strategies and contingency plans to address identified risks.</li>
+            </ul>
+            <br>
+            <li>Regulatory and Compliance Considerations</li>
+            <ul class="resume-item-list">
+                <li>Determine if there are any industry-specific regulations or compliance requirements that the data
+                    processing pipeline must adhere to. Ensure that AWS services can support these requirements.
+                </li>
+            </ul>
+            <br>
+            <li>Timeline and Milestones</li>
+            <ul class="resume-item-list">
+                <li>Create a project timeline with key milestones and deadlines. Identify critical path activities and
+                    dependencies.
+                </li>
+                <li>Set realistic expectations for how long it will take to design, implement, and deploy the data
+                    processing pipeline.
+                </li>
+            </ul>
+            <br>
+            <li>Scalability and Future Growth</li>
+            <ul class="resume-item-list">
+                <li>Consider the startup's growth plans and assess whether the proposed AWS infrastructure and pipeline
+                    design can scale to accommodate future data volume and processing needs.
+                </li>
+            </ul>
+            <br>
+            <li>Alternative Solutions</li>
+            <ul class="resume-item-list">
+                <li>Explore alternative solutions, such as managed data processing services outside of AWS or
+                    on-premises solutions.
+                </li>
+                <li>Compare these alternatives with the AWS-based solution in terms of cost, scalability, and
+                    functionality.
+                </li>
+            </ul>
+            <br>
+            <li>Recommendation</li>
+            <ul class="resume-item-list">
+                <li>Based on the analysis, provide a clear recommendation on whether building a data processing pipeline
+                    on managed AWS infrastructure is feasible and advisable.
+                </li>
+            </ul>
+            <br>
+            <li>Action Plan</li>
+            <ul class="resume-item-list">
+                <li>If the project is deemed feasible, outline an action plan that details the steps required to move
+                    forward, including project initiation, design, development, testing, and deployment phases.
+                </li>
+            </ul>
+            <br>
+
+        </ol>
+
+
+        <h3 class="resume-item-title" itemprop="name">Deliverables</h3>
+
+
+        <ul class="resume-item-list">
+            <li>A repository containing all code and assets required to deploy and run the developed software</li>
+            <li>A fully automated CI/CD pipeline that provisions the infrastructure, tests and deploys the code</li>
+            <li>A well documented code base covering usage, maintenance and extension of the deliverables</li>
+        </ul>
+    </div>
+
+
+    {% if site.resume_looking_for_work == 'yes' %}
+    <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+    {% elsif site.resume_looking_for_work == 'no' %}
+    <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+    {% else %}
+    {% endif %}
+
+
+</section>
+
+
