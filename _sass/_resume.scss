@@ -191,9 +191,13 @@
         color: #9c9c9c;
       }
     }
-    .resume-item-highlight {
-       font-weight: bold;
-    }
+
+  }
+  .resume-item-line {
+    border: none;
+    height: 2px;
+    color: #c7c7c7;
+    background-color: #c7c7c7;
   }
 
   .resume-item-copy { margin: .75rem 0 0; }
