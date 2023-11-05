@@ -1,11 +1,26 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
+# covestro
+- project: Data warehouse consulting services
+  industry: Chemistry
+  role: Consultant / Data Engineer
+  duration: Sep, 2023 &mdash; Present
+  technologies: AWS Cloud, Spring Boot, Java, Docker, GitLab
+  # url: "#"
+  description: >
+    Ssupport and implementation services.
+    <ul class="resume-item-list">
+    <li>Consulting services data model, deployment strategies, process design</li>
+    <li>Design and implementation of various ETL processes</li>
+    <li>Workshops and knowledge transfer on cloud and data architecture, process design</li>
+    </ul>
+
 # gfk
 - project: Data warehouse migration
   industry: Market research
   role: Solution Architect / Cloud Architect
-  duration: Jul, 2021 &mdash; Present
+  duration: Jul, 2021 &mdash; Oct, 2023
   technologies: AWS Cloud, LakeFormation, Glue, EMR, Athena, Lambda, SQS, S3, Docker, Spark, Hadoop, Airflow, Terraform, Python, GitLab
   # url: "#"
   description: >
