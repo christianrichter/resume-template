@@ -191,8 +191,14 @@
         color: #9c9c9c;
       }
     }
+  }
+  .resume-item-list-no-bullets, .resume-item-list-no-bullets li {
+    padding: 0;
+    list-style-type:none;
 
   }
+
+
   .resume-item-line {
     border: none;
     height: 2px;
@@ -223,7 +229,7 @@
     color: #999;
 
     > a {
-      font-weight: 700;
+      // font-weight: 700;
       color: #333;
     }
   }
