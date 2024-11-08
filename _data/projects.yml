@@ -11,7 +11,7 @@
     Supply chain management consulting and implementation services.
     <ul class="resume-item-list">
     <li>Support in creation of master data set for a supply chain management application from multiple heterogeneous sources</li>
-    <li>Design and implementation of multiple ETL services</li>
+    <li>Design and implementation of ETL and data pipelines</li>
     <li>Implementation data quality dashboard for business critical KPIs</li>
     <li>Deployment and monitoring of various data pipelines</li>
     </ul>
