@@ -1,11 +1,26 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
+# rain
+- project: Supply chain management application
+  industry: Logistics
+  role: Data Engineer
+  duration: Oct, 2024 &mdash; Present
+  technologies: Google Cloud, GKE, SQL, Kotlin, Pekko, Kafka, GitHub
+  description: >
+    Supply chain management consulting and implementation services.
+    <ul class="resume-item-list">
+    <li>Support in creation of master data set for a supply chain management application from multiple heterogeneous sources</li>
+    <li>Design and implementation of multiple ETL services</li>
+    <li>Implementation data quality dashboard for business critical KPIs</li>
+    <li>Deployment and monitoring of various data pipelines</li>
+    </ul>
+
 # covestro
 - project: Data warehouse consulting services
   industry: Chemistry
   role: Consultant / Data Engineer
-  duration: Sep, 2023 &mdash; Present
+  duration: Sep, 2023 &mdash; Oct, 2024
   technologies: AWS Cloud, Spring Boot, Java, Docker, GitLab
   # url: "#"
   description: >
