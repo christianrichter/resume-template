@@ -19,7 +19,7 @@
 # covestro
 - project: Data warehouse consulting services
   industry: Chemistry
-  role: Consultant / Data Engineer
+  role: Data Engineer
   duration: Sep, 2023 &mdash; Oct, 2024
   technologies: AWS Cloud, Spring Boot, Java, Docker, GitLab
   # url: "#"
@@ -37,7 +37,7 @@
 # gfk
 - project: Data warehouse migration
   industry: Market research
-  role: Solution Architect / Cloud Architect
+  role: Cloud Architect
   duration: Jul, 2021 &mdash; Oct, 2023
   technologies: AWS Cloud, LakeFormation, Glue, EMR, Athena, Lambda, SQS, S3, Docker, Spark, Hadoop, Airflow, Terraform, Python, GitLab
   # url: "#"
@@ -53,7 +53,7 @@
 # rtlplus
 - project: Cloud based data warehouse
   industry: Entertainment
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Jun, 2020 &mdash; Dec, 2022
   technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
   # url: "#"
@@ -86,7 +86,7 @@
 # volkswagen
 - project: Data analytics on car measurement data
   industry: Automotive
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Jan, 2019 &mdash; Mar, 2020
   # url: "#"
   technologies: AWS Cloud, Lambda, IAM, Airflow, Kubernetes, Terraform, Python, Jenkins
@@ -104,7 +104,7 @@
 # swarovski
 - project: Data science environment
   industry: Consumer Goods
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Oct, 2017 &mdash; Nov, 2018
   # url: "#"
   technologies: AWS Cloud, Kubernetes, Spark, R, NiFi, Terraform, Docker, Jupyter NB
@@ -122,7 +122,7 @@
 # aixigo
 - project: Micro service architecture
   industry: Financial services
-  role: System Architect / Consultant Data Strategy
+  role: System Architect
   duration: May, 2017 &mdash; Dec, 2018
   # url: "#"
   technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jenkins
@@ -139,7 +139,7 @@
 # open grid
 - project: Big Data vendor evaluation
   industry: Energy
-  role: Requirements Engineer / Solution Architect
+  role: Requirements Engineer
   duration: Mar, 2017
   # url: "#"
   technologies: Hortonworks, Cloudera, SAP Cloud, Apache NiFi, AWS Cloud, MS Azure, Terraform
@@ -155,7 +155,7 @@
 # gfk
 - project: Big Data warehouse
   industry: Market research
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Jan, 2017 &mdash; Aug, 2017
   # url: "#"
   technologies: Spark, SparkR, Hadoop, Hive, Jupyter, AWS Cloud, R, Bamboo, Terraform
@@ -187,7 +187,7 @@
 # helix leisure
 - project: Architecture Review
   industry: Entertainment
-  role: Data Engineer / Solution Architect
+  role: Data Engineer
   duration: Jun, 2016 &mdash; Dec, 2016
   # url: "#"
   technologies: Hadoop, Spark, AWS Cloud, Scala, MapReduce, JCascalog, RedShift
@@ -202,7 +202,7 @@
 # otto
 - project: ETL Pipelines
   industry: Online retail
-  role: Solution Architect / Data Engineer
+  role: Software Engineer
   duration: Feb, 2016 &mdash; Jul, 2016
   # url: "#"
   technologies: Hadoop, Hive, Spark, Redis, Kafka, Avro, Scala, HCatalog, Schedoscope
@@ -218,7 +218,7 @@
 # gfk
 - project: CI/CD Pipelines
   industry: Market research
-  role: Solution Architect / Data Engineer
+  role: DevOps Engineer
   duration: Dec, 2015 &mdash; Aug, 2016
   # url: "#"
   technologies: AWS Cloud, Hadoop, Spark, Bamboo, Git, Terraform, Vagrant, InfluxDB
@@ -233,7 +233,7 @@
 # radioopt
 - project: Data warehouse
   industry: Technology
-  role: Solution Architect
+  role: Data Engineer
   duration: Jul, 2015 &mdash; Oct, 2015
   # url: "#"
   technologies: Hadoop, Impala, Hive, ETL, AWS Cloud
@@ -248,7 +248,7 @@
 # technicolor
 - project: Data analytics on wifi device data
   industry: Consumer Goods
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Jul, 2014 &mdash; Jun, 2015
   # url: "#"
   technologies: Hadoop, Samza, Spark, Kafka, Java, ETL, AWS
@@ -264,7 +264,7 @@
 # ubisoft
 - project: Game Analytics
   industry: Entertainment
-  role: Solution Architect / Data Engineer
+  role: Data Engineer
   duration: Mar, 2013 &mdash; Sep, 2014
   # url: "#"
   technologies: Hadoop, Map / Reduce, Kafka, Hive, ETL, Java, Linux
@@ -282,7 +282,7 @@
 # telekom
 - project: Hadoop on Demand
   industry: Telecommunication
-  role: Solution Architect / Software Engineer
+  role: DevOps Engineer
   duration: Feb, 2013 &mdash; Jun, 2014
   # url: "#"
   technologies: Hadoop, OpenStack, Opscode Chef, Java, Linux
@@ -297,7 +297,7 @@
 # gfk
 - project: Geo location data analytics
   industry: Market research
-  role: Solution Architect / Data Engineer
+  role: DevOps Engineer
   duration: Nov, 2012 &mdash; Aug, 2015
   # url: "#"
   technologies: Apache Hadoop, Hive, Flume, Java, Spring, Puppet, Ubuntu Linux, AWS
