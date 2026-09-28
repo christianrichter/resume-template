@@ -24,13 +24,23 @@ docker image build -t resume-template .
 docker run --rm --name resume-template -v "$PWD":/home/app --network host resume-template
 ```
 
+The host Ruby (3.x) cannot run the locked Jekyll 3.8 / `github-pages` 204 without extra gems, so Docker is the reliable local preview.
+
+### Deployment
+
+AWS Amplify app `resume` (`drpwo2606hncl`, eu-central-1) auto-builds branch `cv` and serves `crichter.io` / `www.crichter.io`.
+**Pushing to `origin/cv` deploys to production.** Check a deploy with
+`aws amplify list-jobs --app-id drpwo2606hncl --branch-name cv`.
+
 ## Architecture
 
-This is a **Jekyll static site** — a personal resume/CV for Christian Richter (Data Engineer). The architecture separates content (YAML data) from presentation (HTML/SCSS).
+This is a **Jekyll static site** — a personal resume/CV for Christian Richter (Data Engineer & Cloud Architect). The architecture separates content (YAML data) from presentation (HTML/SCSS).
 
 ### Content lives in `_data/`
 
-All resume content is stored as YAML files: `experience.yml`, `projects.yml`, `skills.yml`, `education.yml`, `services.yml`, `references.yml`, `links.yml`. Editing resume content means editing these files.
+All resume content is stored as YAML files: `experience.yml`, `projects.yml`, `skills.yml`, `education.yml`, `services.yml`, `additional.yml`, `references.yml`, `links.yml`. Editing resume content means editing these files.
+
+Content source of truth is the English reference CV (`~/Nextcloud/CV/ai/CV_Christian_Richter_EN_2026.docx`, rules in `~/Nextcloud/CV/ai/CLAUDE.md`). The website shows no client names in projects (generic titles + industry only). Projects with `earlier: true` render in the "Earlier Projects" section.
 
 ### Presentation in `_layouts/` and `_includes/`
 
@@ -47,7 +57,7 @@ Controls site metadata, contact info, the intro paragraph (`resume_header_intro`
 
 ### Static pages
 
-`services.html`, `impressum.html`, `dsgvo.html` are standalone Jekyll pages outside the main resume layout.
+`services.html`, `impressum.html`, `dsgvo.html` are standalone Jekyll pages outside the main resume layout. The pipeline patterns on `services.html` live in `_data/pipelines.yml` and are drawn by `_includes/pipeline-diagram.html` (HTML/CSS boxes, styles in `_resume.scss`).
 
 ### JavaScript
 

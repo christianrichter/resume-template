@@ -1,36 +1,62 @@
 # Jobs
-# Solution Architect
+# Freelance
 - company: Ingenieurbüro Christian Richter
-  position: Data Engineer - Data, Cloud & Container
-  duration: Jan, 2022 &mdash; Present
-  summary: I support customers in the design and implementation of cloud-based data infrastructure and data-driven process pipelines.
+  position: Freelance Data Engineer & Cloud Architect
+  duration: Jan 2010 &ndash; Present
+  summary: >
+    <ul class="resume-item-list">
+    <li>Independent consultancy for cloud data platforms, ETL and streaming, Kubernetes and infrastructure as code</li>
+    <li>25+ client engagements; see <a href="#projects">Selected Projects</a> below</li>
+    </ul>
+
+# Shibui Finance
+- company: Shibui Finance
+  url: https://shibui.finance
+  position: Founder
+  duration: Sep 2025 &ndash; Present
+  summary: >
+    <ul class="resume-item-list">
+    <li>Built and operate a public MCP server (mcp.shibui.finance) that makes 60+ years of US stock market data queryable in plain English from Claude; listed in the official MCP Registry</li>
+    <li>Own data platform (dbt, PostgreSQL, DuckDB) with governed LLM access (read-only SQL, EXPLAIN validation, rate limiting)</li>
+    <li>AI-driven software factory with Claude Code agents (plan &rarr; implement &rarr; review)</li>
+    </ul>
 
 # AltusInsight
 - company: AltusInsight GmbH
-  position: Founder
-  duration:  Mar, 2013 &mdash; Jun, 2021
-  summary: AltusInsight has developed the cloud-based software LambdaNow, a deployment platform for data infrastructure. I founded and run the company for 8 years.
-
-# Consultant
-- company: Ingenieurbüro Christian Richter
-  position: Big Data Engineer
-  duration: Jan, 2010 &mdash; Mar, 2014
-  summary: My main focus was to enable customers using big data technologies to cater to their data processing needs.
+  position: Founder & Managing Director
+  duration: Mar 2013 &ndash; Jun 2021
+  summary: >
+    <ul class="resume-item-list">
+    <li>Founded and ran the company for eight years; responsible for product design and implementation</li>
+    <li>Built LambdaNow, a cloud-based platform for fully automated deployment of Apache Hadoop clusters on AWS and OpenStack</li>
+    </ul>
 
 # MOG
 - company: MOG Inc.
-  position: Software Developer
-  duration:   May, 2005  &mdash; Oct, 2009
-  summary: First employee of the start-up. Worked on backend software, databases and infrastructure. Implemented algorithms to customize user experience.
+  position: Backend Software Engineer & Systems Architect (contract)
+  duration: May 2005 &ndash; Oct 2009
+  summary: >
+    <ul class="resume-item-list">
+    <li>First engineer at this music and media startup; responsible for backend software, databases and infrastructure</li>
+    <li>Designed, built and launched the production hosting environment</li>
+    <li>Developed C++ backend systems, including a distributed collaborative filtering engine, a search spellchecker and a high-performance XML-RPC server</li>
+    </ul>
 
 # Fraunhofer
-- company: Fraunhofer-Gesellschaft
+- company: Fraunhofer IDMT
   position: Research Assistant
-  duration:   Aug, 2000  &mdash; Mar, 2005
-  summary: Researched various algorithms on speech recognition.
+  duration: Aug 2000 &ndash; Mar 2005
+  summary: >
+    <ul class="resume-item-list">
+    <li>Researched nearest-neighbor and similarity search algorithms for music information retrieval (query by humming)</li>
+    <li>Designed and implemented algorithms in C++ and MATLAB; built test environments and trade-show demo applications</li>
+    </ul>
 
 # ID Analytics
-- company: ID Analytics
-  position: Data Science Intern
-  duration:   Jan, 2003  &mdash; Jun, 2003
-  summary: Researched various algorithms for financial fraud detection.
+- company: ID Analytics Inc.
+  position: Data Analyst Intern
+  duration: Jan 2003 &ndash; Jun 2003
+  summary: >
+    <ul class="resume-item-list">
+    <li>Analyzed ~250 GB of data for feature extraction and developed regression-based algorithms to detect identity theft</li>
+    </ul>

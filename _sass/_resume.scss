@@ -79,6 +79,15 @@
     }
   }
 
+  .header-tagline {
+    @include sans_regular;
+    font-size: 1rem;
+    text-align: center;
+    margin: .75rem 0 0;
+
+    @include media_larger_than_mobile { text-align: left; }
+  }
+
   .executive-summary {
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
@@ -213,6 +222,90 @@
     width: 100%;
     height: auto;
   }
+}
+
+// pipeline diagrams (services page)
+
+.pipeline-diagram {
+  @include sans;
+  margin: 1.25rem 0;
+}
+
+.pipeline {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .pipeline-step {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .6rem .5rem;
+    border: 2px solid #c7c7c7;
+    @include border-radius(3px);
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .pipeline-step + .pipeline-step {
+    margin-left: 1.75rem;
+
+    &:before {
+      content: "\2192";
+      position: absolute;
+      left: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #666;
+    }
+  }
+
+  .pipeline-step-title {
+    font-weight: 700;
+    font-size: .95rem;
+    line-height: 1.2;
+  }
+
+  .pipeline-step-detail {
+    margin-top: .25rem;
+    font-size: .8rem;
+    line-height: 1.3;
+    color: #666;
+  }
+
+  @include media_mobile {
+    flex-direction: column;
+
+    .pipeline-step + .pipeline-step {
+      margin-left: 0;
+      margin-top: 1.75rem;
+
+      &:before {
+        content: "\2193";
+        left: 50%;
+        top: -1.6rem;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.pipeline-band {
+  margin: .75rem 0 0;
+  padding: .4rem .75rem;
+  border: 2px dashed #c7c7c7;
+  @include border-radius(3px);
+  font-size: .8rem;
+  color: #666;
+  text-align: center;
 }
 
 // footer styles

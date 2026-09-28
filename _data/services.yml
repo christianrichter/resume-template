@@ -1,11 +1,22 @@
-- service: Design data-driven processes
-  description: I support your organization to design and develop a data strategy that aligns with the business goals and organizational structure and provide guidance in the design and implementation of ETL processes and required cloud infrastructure.
+# Services
+# Descriptions are the capability bullets of the CV summary (CV_Christian_Richter_EN_2026.docx)
+- service: Data platforms
+  description: Architecture and delivery of data warehouses, data lakes and lakehouse platforms (AWS, GCP, Kubernetes), from concept to production
 
-- service: Rapid project setup
-  description: If you are planning a new project and need help getting started I'm ready to support you and your team. After drafting an initial concept based on the business requirements, I immediately start setting up cloud infrastructure, CI/CD pipelines and ETL processes.
+- service: Data pipelines & streaming
+  description: Design and operation of ETL/ELT, streaming and ML pipelines (Spark, Kafka, Airflow, dbt) at terabyte scale
 
-- service: Architecture review
-  description: I help you to improve the performance of an application by reviewing the architecture and identifying weak spots (e.g. how data is partitioned, stored and processed) and provide suggestions for remediation.
+- service: AI integration
+  description: "AI-assisted data processing: document extraction, semantic search and workflow automation with LLM tool integration (MCP), including a self-built MCP server in production"
+
+- service: Cloud infrastructure as code
+  description: Cloud-native infrastructure as code (Terraform, Helm, GitOps), including high-availability and disaster-recovery concepts
+
+- service: Data governance & modeling
+  description: GDPR-compliant data management including data residency, data modeling, and requirements and process analysis
+
+- service: Technical leadership
+  description: Technical leadership of distributed teams, architecture reviews and knowledge transfer
 
 - service: Workshops
-  description: I offer various workshops touching data engineering topics and cloud infrastructure best practices. Don't hesitate to get in touch to learn more about my workshop offerings.
+  description: Hands-on workshops for your team on cloud data platforms, data pipelines, streaming and AI integration, tailored to your team's level. See <a href="services#workshops">workshops</a> for topics.

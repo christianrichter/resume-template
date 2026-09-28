@@ -1,0 +1,14 @@
+<!-- Simple pipeline diagram: left to right on desktop, top to bottom on mobile. Params: steps (title, detail), band, label -->
+<div class="pipeline-diagram">
+  <ol class="pipeline" aria-label="{{ include.label }}">
+    {% for step in include.steps %}
+    <li class="pipeline-step">
+      <span class="pipeline-step-title">{{ step.title }}</span>
+      {% if step.detail %}<span class="pipeline-step-detail">{{ step.detail }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% if include.band %}
+  <p class="pipeline-band">{{ include.band }}</p>
+  {% endif %}
+</div>

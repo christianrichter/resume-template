@@ -1,0 +1,15 @@
+# Additional information
+# Source of truth: CV_Christian_Richter_EN_2026.docx ("Additional Information")
+- label: Patent
+  description: Co-inventor of European patent EP1377924 B1 (Fraunhofer IDMT)
+
+- label: Open Source
+  description: >
+    <a href="https://github.com/Shibui-Finance/caddy-jsonrpc-matcher">caddy-jsonrpc-matcher</a>: Caddy module for selective rate limiting of MCP tool calls;
+    Kafka and Redis export modules for <a href="https://github.com/ottogroup/schedoscope">Schedoscope</a>, an open-source Hadoop data warehouse framework
+
+- label: Languages
+  description: German (native), English (fluent, full professional proficiency)
+
+- label: Work model
+  description: Remote or on-site, hybrid preferred (based in Berlin)

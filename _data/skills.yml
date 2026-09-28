@@ -1,16 +1,28 @@
 # Skills
-# Organizational leadership
-- skill: Building data-driven backends
-  description: I thrive on building new things from scratch, contributing best practices from previous projects and experience on how to design, build, deploy and operate data processing software and infrastructure.
+# Source of truth: CV_Christian_Richter_EN_2026.docx ("Core Skills")
+- skill: Core Stack
+  description: Python, SQL, Spark, Kafka, Airflow, dbt, Terraform, Kubernetes, AWS, GCP, MCP
 
-# Requiremenrs engineering
-- skill: Requirements engineering
-  description: Understanding customer needs and business requirements and translating them into infrastructure and software is one of my core competency used throughout the lifetime of every project. My focus on the essential core value proposition provides value to the customer early on.
+- skill: Data Engineering
+  description: Spark/PySpark, Databricks, Delta Lake, Hudi, dbt, Airflow, AWS Glue, Apache NiFi, Pandas, Polars, NumPy, scikit-learn, Power BI
 
-# Enabling team members to efficiently contribute
-- skill: Enabling teams
-  description: I support and enable teams to efficiently build and operate data-driven processes. Sharing knowledge and best practices on designing and implementing reliable ETL processes and required infrastructure components is part of my daily routine.
+- skill: Streaming
+  description: Kafka, Kafka Connect, Kafka Streams, Strimzi, Amazon Kinesis, Apache Pekko
 
-# Building data processing foundation
-- skill: Using technology
-  description: Having worked on more than 20 projects allowed me to learn and use a broad variety of tools and services to design and build data-driven backend processes. This understanding helps me in choosing the right tools and technologies for the task given.
+- skill: Databases & Formats
+  description: PostgreSQL, OpenSearch, MongoDB, DynamoDB, DuckDB, TimescaleDB, MySQL/MariaDB, Oracle, Hive, Impala, HBase, Cassandra; Parquet, Avro, ORC
+
+- skill: Cloud
+  description: AWS (S3, EMR, Glue, Athena, Lake Formation, Lambda, Kinesis, RDS, DynamoDB, ECS/ECR, IAM, CloudFormation, CDK), Google Cloud (GKE, Vertex AI, Document AI), OpenStack
+
+- skill: Containers
+  description: Kubernetes, OpenShift, Docker, Helm, Kustomize, Argo CD, cert-manager, Prometheus, Grafana, Kubeflow
+
+- skill: IaC & DevOps
+  description: Terraform, Terragrunt, CDKTF, Ansible, GitOps, GitLab CI, GitHub, Jenkins, Bamboo, Open Policy Agent, Puppet, Chef
+
+- skill: AI & LLM
+  description: Vertex AI, Document AI, Model Context Protocol (MCP), llama.cpp, embeddings and vector search, AI-driven workflows, Claude Code, GitHub Copilot
+
+- skill: Programming
+  description: Python, Java, Kotlin, SQL, Scala, Bash, Ruby, C++; Spring Boot, Flask, Liquibase, Flyway, Maven, Gradle

@@ -1,101 +1,143 @@
 ---
 layout: page
+title: "Services – Christian Richter"
 ---
 
 <section class="content-section">
 
     <header class="section-header">
-        <h2 id="services">AWS Cloud & Data Engineering Service Offerings</h2>
+        <h2 id="services">Data Engineering & Cloud Architecture Services</h2>
     </header>
 
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            I help teams build data platforms, cloud infrastructure and AI integrations, from architecture and requirements
+            through to production operation. Below you'll find five common data pipeline patterns explained in simple terms,
+            how an engagement with me usually works, and the workshops I offer. My <a href="/#projects">resume</a> lists the
+            projects in detail.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="pipelines">What a data pipeline can look like</h2>
+    </header>
 
     <div class="resume-item">
+        <p class="resume-item-copy">
+            Five common patterns, in simple terms. The tools named are examples; the right choice depends on your systems
+            and your team.
+        </p>
+    </div>
 
-        My focus is on building data pipelines on managed AWS infrastructure covering a broad range of data engineering topics.
-        Examples of work I did in the past:
-        <br>
-        <br>
+    {% for pattern in site.data.pipelines %}
+    <div class="resume-item">
+        <h3 class="resume-item-title">{{ pattern.title }}</h3>
+        <p class="resume-item-copy">{{ pattern.summary }}</p>
+        {% include pipeline-diagram.html steps=pattern.steps band=pattern.band label=pattern.title %}
+        {% if pattern.built %}
+        <p class="resume-item-copy"><b>{{ pattern.built_label | default: "Where I've built this:" }}</b> {{ pattern.built }}</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+</section>
 
 
-        <h4 class="resume-item-title" itemprop="name">Design and implementation of data pipelines</h4>
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="how-it-works">How an engagement usually works</h2>
+    </header>
+
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            Typical engagement: I design the platform, build it with your team and hand it over.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">1. Design</h3>
+        <p class="resume-item-copy">
+            Together we clarify objectives and requirements, look at the data sources and evaluate the options, including
+            cost and technical feasibility. The result is an architecture with a timeline and milestones. Key decisions are
+            documented as architecture decision records (ADRs), so they can be reviewed and traced later.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">2. Build with your team</h3>
+        <p class="resume-item-copy">
+            I set up the cloud infrastructure as code, the data pipelines and the CI/CD pipelines, with monitoring and
+            alerting for production. I work hands-on inside your team and can lead it technically where needed.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">3. Hand over</h3>
+        <p class="resume-item-copy">
+            Documentation, training and knowledge transfer along the way mean your team takes over a platform it
+            understands. At the end of the project you get all deliverables agreed upon, including:
+        </p>
         <ul class="resume-item-list">
-            <li>Fetch data from a REST-API, transform it using AWS Glue and store the result on AWS S3</li>
-            <li>Build complex data transformation jobs using Apache Spark on AWS EMR</li>
-            <li>Develop and integrate an AWS Lambda function to transform data on upload</li>
-        </ul>
-
-        <img class="resume-item-image" width="680" src="/images/lambda.png" alt="lambda">
-
-
-        <h4 class="resume-item-title" itemprop="name">Cloud-based data warehouse implementations</h4>
-        <ul class="resume-item-list">
-            <li>Data warehouse implementation based on AWS Glue Catalog, LakeFormation, S3, Athena</li>
-        </ul>
-
-        <img class="resume-item-image" width="680" src="/images/datalake.png" alt="datalake">
-
-        <h4 class="resume-item-title" itemprop="name">Design and implementation of data driven services</h4>
-        <ul class="resume-item-list">
-            <li>Implement real-time analytics dashboard using AWS Kinesis and Spark Streaming</li>
-        </ul>
-
-        <img class="resume-item-image" width="680" src="/images/streaming.png" alt="streaming">
-
-        <h4 class="resume-item-title" itemprop="name">Workshops on cloud and data architecture, process design</h4>
-        <ul class="resume-item-list">
-            <li>Using AWS Managed Airflow (MWAA) to schedule and manage various data pipelines</li>
-            <li>Data Management / Data Lineage / Data Governance</li>
-            <li>Strategies and best practices in developing a cloud-based data warehouse</li>
-        </ul>
-        <img class="resume-item-image" width="680" src="/images/scheduler.png" alt="scheduler">
-        <br>
-
-
-        <hr class="resume-item-line">
-
-        <br>
-
-        <h3 class="resume-item-title" itemprop="name">How I work</h3>
-
-        My approach assessing a new project is as follows:
-
-        <ol class="resume-item-list">
-            <li>Define Project Objectives and Requirements</li>
-            <li>Assess Data Sources</li>
-            <li>Cost Analysis and Technical Feasibility</li>
-            <li>Timeline and Milestones</li>
-            <li>Action Plan</li>
-        </ol>
-
-        The timeline and milestones provide an overview of how the project will be executed according to the action plan.
-
-<!--
-        <img class="resume-item-image" width="680" src="/images/deliverables.jpg" alt="deliverables">
--->
-        <hr class="resume-item-line">
-        <br>
-
-        <h3 class="resume-item-title" itemprop="name">Deliverables</h3>
-
-        At the time of project completion you will get all deliverables agreed upon and consisting of:
-        <ul class="resume-item-list">
-            <li>A repository containing all code and assets required to deploy and run the developed software</li>
+            <li>A repository containing all code and assets required to deploy and run the software</li>
             <li>A fully automated CI/CD pipeline that provisions the infrastructure, tests and deploys the code</li>
-            <li>A well documented code base covering usage, maintenance and extension of the deliverables</li>
+            <li>Documentation covering usage, maintenance and extension of the deliverables</li>
         </ul>
+    </div>
 
-        <hr class="resume-item-line">
-        <br>
+</section>
 
-        <h3 class="resume-item-title" itemprop="name">Next Steps</h3>
-        <img class="resume-item-image" width="680" src="/images/next_steps.jpg" alt="next_steps">
 
-        If you think about your data engineering needs and are looking for support,
-        feel free to contact me by phone (+49 30 4193 6978) or email (hello@crichter.io).
-        <br>
-        <br>
-        I offer free consulting time discussing you needs and brainstorm viable solutions.
-        You don't have to book me, use our discussion as an inspiration for your work.
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="workshops">Workshops</h2>
+    </header>
+
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            Sometimes the best start is getting your team up to speed. I run workshops tailored to your team's level,
+            with hands-on exercises, for example on:
+        </p>
+        <ul class="resume-item-list">
+            <li>Cloud data platforms: data lake, data warehouse and lakehouse architectures on AWS, Google Cloud or Kubernetes</li>
+            <li>Orchestrating data pipelines with Airflow, including Amazon MWAA</li>
+            <li>Real-time data processing with Kafka, Kafka Streams and Spark Streaming</li>
+            <li>Data management and governance, including GDPR-compliant data residency</li>
+            <li>AI integration: LLM-based document extraction and plain-English data access with MCP</li>
+        </ul>
+        <p class="resume-item-copy">
+            Past workshops include a three-day introduction to the big data ecosystem with hands-on exercises on AWS
+            (healthcare) and a workshop on data management and Lambda architecture (entertainment technology).
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="next-steps">Next Steps</h2>
+    </header>
+
+    <img class="resume-item-image" width="680" src="/images/next_steps.jpg" alt="">
+
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            Planning a data platform, a pipeline or an AI integration and looking for support? Call me at
+            <a href="tel:+493041936978">+49 30 4193 6978</a>, email <a href="mailto:hello@crichter.io">hello@crichter.io</a>
+            or book a 30-minute call below.
+        </p>
+        <p class="resume-item-copy">
+            The first conversation is free: we talk through your needs and possible solutions, with no obligation to book
+            me. Take whatever is useful into your own work.
+        </p>
     </div>
 
 

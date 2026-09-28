@@ -1,0 +1,96 @@
+# Pipeline patterns shown on services.html, rendered by _includes/pipeline-diagram.html
+# `built` lines are facts from CV_Christian_Richter_EN_2026.docx (industry only, no client names).
+# Patterns 1-3 are based on: automotive = Volkswagen, market research = GfK migration, entertainment technology = Helix Leisure.
+
+- title: "Event-driven: process files as they arrive"
+  summary: >
+    When a file lands in cloud storage, a notification puts a message on a queue. A small serverless function picks it up,
+    validates and transforms the data and stores the result. There is no server to run, and it scales with the number of files.
+  steps:
+    - title: Upload
+      detail: file lands in S3
+    - title: Queue
+      detail: SQS message
+    - title: Process
+      detail: "AWS Lambda: validate · transform"
+    - title: Store
+      detail: S3 · OpenSearch index
+  built: >
+    Automotive: validation, ingestion and indexing of vehicle data, with millions of documents indexed in OpenSearch.
+
+- title: "Batch: from your systems to a dashboard"
+  summary: >
+    Data from databases, APIs and files is collected on a schedule and kept as a raw copy in a data lake. Spark jobs clean
+    and combine it into tables that analysts query with SQL and dashboards read from. Airflow runs every step in the right
+    order and alerts when something fails.
+  steps:
+    - title: Sources
+      detail: databases · APIs · files
+    - title: Data lake
+      detail: S3 · Glue Data Catalog · Lake Formation
+    - title: Transform
+      detail: Spark on AWS Glue or EMR
+    - title: Query
+      detail: Athena (SQL)
+    - title: Dashboards
+      detail: reports · BI
+  band: Airflow (e.g. Amazon MWAA) schedules and monitors every step · infrastructure as code with Terraform
+  built: >
+    Market research: an on-premises data warehouse moved to AWS, with 100+ ETL jobs migrated from Cloudera,
+    a ~1.5 TB data lake and Airflow replacing Oozie.
+
+- title: "Real-time: react within seconds"
+  summary: >
+    Events such as a click in an app or a reading from a device are written to a stream, processed on the fly and pushed
+    to a fast store or another system. They can be used right away instead of the next day.
+  steps:
+    - title: Events
+      detail: apps · devices
+    - title: Stream
+      detail: Kinesis · Kafka
+    - title: Process
+      detail: Spark Streaming · Kafka Streams
+    - title: Serve
+      detail: Redis cache · live dashboard · marketing tool
+  built: >
+    Entertainment technology: a real-time layer with Spark Streaming, integrated with the batch layer.
+    Media: a real-time Braze integration with under 1 second latency.
+
+- title: "AI document extraction: from PDFs to clean data"
+  summary: >
+    Documents such as PDFs and scans hold valuable data in unstructured form. The pipeline reads each document, lets an
+    AI model extract the relevant fields, checks the result against rules and existing data, and writes clean records to
+    the database.
+  steps:
+    - title: Documents
+      detail: PDFs · scans
+    - title: Extract
+      detail: "LLM: Document AI · Vertex AI"
+    - title: Validate
+      detail: rules · existing data
+    - title: Store
+      detail: structured tables
+    - title: Use
+      detail: applications · quality dashboard
+  built: >
+    Supply chain management: LLM-based document extraction on Google Cloud, processing ~120k documents.
+
+- title: Ask your data in plain English
+  summary: >
+    Instead of writing SQL, people ask a question. An AI assistant such as Claude turns it into a query through an MCP
+    server (Model Context Protocol), which allows read-only access only, checks every query before it runs and limits the
+    load. The answer comes back the same way.
+  steps:
+    - title: Question
+      detail: plain English
+    - title: AI assistant
+      detail: Claude
+    - title: MCP server
+      detail: read-only SQL · EXPLAIN check · rate limiting
+    - title: Data platform
+      detail: dbt · PostgreSQL · DuckDB
+  built_label: "Live example:"
+  built: >
+    <a href="https://shibui.finance">Shibui Finance</a> makes 60+ years of US stock market data queryable in plain English
+    from Claude and is listed in the official MCP Registry. Rate limiting uses my open-source Caddy module
+    <a href="https://github.com/Shibui-Finance/caddy-jsonrpc-matcher">caddy-jsonrpc-matcher</a>.

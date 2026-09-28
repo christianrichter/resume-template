@@ -1,6 +1,6 @@
 # Site settings
-title: "Data, Cloud & Container"
-description: "This is the online resume / CV of Christian Richter, a data engineer with more than 15 years of experience building reliable ETL pipeline on scalable cloud infrastructure."
+title: "Christian Richter – Data Engineer & Cloud Architect"
+description: "Christian Richter, independent data engineer and cloud architect in Berlin: data platforms, cloud infrastructure (AWS, GCP, Kubernetes) and AI integration (LLM, MCP)."
 
 # Build settings
 markdown: kramdown
@@ -11,19 +11,20 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Christian Richter"
-resume_title:                   "Data Engineer - Data, Cloud & Container"
+resume_title:                   "Data Engineer & Cloud Architect"
+resume_tagline:                 "Data Platforms · Cloud Infrastructure (AWS, GCP, Kubernetes) · AI Integration (LLM, MCP)"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "hello@crichter.io?subject=Inquiry / Anfrage"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "+49 (0) 30 4193 6978"
+resume_contact_telephone:       "+49 30 4193 6978"
 resume_contact_address:         "Berlin, Germany"
 
-resume_header_contact_info:     "Berlin, Germany • +49 (0) 30 4193 6978 • hello@crichter.io"
+resume_header_contact_info:     "Berlin, Germany • +49 30 4193 6978 • hello@crichter.io"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I am a <strong>Data Engineer</strong> with more than 15 years of experience building reliable ETL pipelines on scalable cloud infrastructure. I help organizations designing and implementing fully automated, data driven processes to support the business case using modern technology and data infrastructure. How can I help you?</p>"
+resume_header_intro: "<p>I'm an independent <strong>data engineer and cloud architect</strong> with more than 25 years of experience in software and data engineering, freelancing since 2010. I have delivered 25+ projects for clients in automotive, chemicals, retail, market research, media and telecommunications, taking data platforms from architecture and requirements through to production operation, and I combine hands-on engineering with technical leadership of distributed teams.</p><p>Typical engagement: design the platform, build it with the client team and hand it over.</p><p><strong>Core stack:</strong> Python, SQL, Spark, Kafka, Airflow, dbt, Terraform, Kubernetes, AWS, GCP, MCP</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -41,6 +42,7 @@ resume_section_skills:          true
 resume_section_references:      true
 resume_section_services:        true
 resume_section_recognition:     false
+resume_section_additional:      true
 resume_section_links:           true
 resume_section_associations:    false
 # resume_section_interests:       true

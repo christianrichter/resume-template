@@ -1,311 +1,338 @@
 # Projects
-# uncomment the urls if you wish to display them, and add your own URL
+# Source of truth: CV_Christian_Richter_EN_2026.docx ("Selected Client Projects").
+# Client names are intentionally not shown on the website; the comment above each entry is for reference only.
+# Entries with `earlier: true` are rendered in the "Earlier Projects (2010 – 2016)" section.
 
-# rain
-- project: Supply chain management application
-  industry: Logistics
-  role: Data Engineer
-  duration: Oct, 2024 &mdash; Present
-  technologies: Google Cloud, GKE, SQL, Kotlin, Pekko, Kafka, GitHub
+# energy utility (confidential)
+- project: Cloud-native data platform on Kubernetes
+  industry: Energy utility
+  role: Data Architect
+  duration: Feb 2025 &ndash; Present
+  technologies: Kubernetes, Terraform, Helm, Strimzi, Kafka, PostgreSQL Operator, MongoDB, Argo CD, GitLab, Apicurio, Velero, GitHub Copilot
   description: >
-    Supply chain management consulting and implementation services.
     <ul class="resume-item-list">
-    <li>Support in creation of master data set for a supply chain management application from multiple heterogeneous sources</li>
-    <li>Design and implementation of ETL and data pipelines</li>
-    <li>Implementation data quality dashboard for business critical KPIs</li>
-    <li>Deployment and monitoring of various data pipelines</li>
+    <li>Create architecture diagrams and documentation (backup/restore, parameterization/validation)</li>
+    <li>Define and implement standards for Kubernetes-native services</li>
+    <li>Document architecture decisions as ADRs</li>
+    <li>Design and document standardized ETL pipelines</li>
+    <li>Evaluate high-availability deployment scenarios for PostgreSQL and Kafka brokers against system requirements</li>
+    <li>Design disaster-recovery processes for data infrastructure components</li>
+    </ul>
+
+# rapid innovation
+- project: AI-assisted data extraction and ETL for an SCM platform
+  industry: Supply chain management
+  role: Data Engineer
+  duration: Oct 2024 &ndash; May 2026
+  technologies: Google Cloud, GKE, Document AI, Vertex AI, Kubernetes, Terraform, Kafka, Kafka Connect, Kotlin, Pekko, dbt, SQL, GitHub, Claude Code
+  description: >
+    <ul class="resume-item-list">
+    <li>Helped build the master data set for a supply chain management application from 8 data sources</li>
+    <li>Designed and implemented ~60 ETL pipelines on Google Cloud</li>
+    <li>Designed and implemented LLM-based workflows for document data extraction and analysis (Document AI, Vertex AI), processing ~120k documents</li>
+    <li>Analyzed and combined the data sources to improve data quality and coverage</li>
+    <li>Built a dashboard to monitor data quality</li>
+    <li>Set up CI/CD pipelines, monitoring and alerting for production ETL processes</li>
     </ul>
 
 # covestro
-- project: Data warehouse consulting services
-  industry: Chemistry
-  role: Data Engineer
-  duration: Sep, 2023 &mdash; Oct, 2024
-  technologies: AWS Cloud, Spring Boot, Java, Docker, GitLab
-  # url: "#"
+- project: Data warehouse for research and production data
+  industry: Chemicals
+  role: Data Architect & Engineer
+  duration: Sep 2023 &ndash; Oct 2024
+  technologies: AWS, CloudFormation, SAP PLM, SAP MES, OpenSearch, Docker, Java, Spring, Flyway, SQL
   description: >
-    Support and implementation services.
     <ul class="resume-item-list">
-    <li>Consulting services data model, deployment strategies, process design</li>
-    <li>Design and implementation of various ETL processes to provide access to research and production data</li>
-    <li>Integration of a SAP PLM system to extract and process research data from laboratories</li>
-    <li>Stakeholder management to manage and set expectations</li>
-    <li>Optimizing job execution and scheduling for faster job processing</li>
-    <li>Workshops and knowledge transfer on cloud and data architecture, process design</li>
+    <li>Advised on the data model, ETL pipelines and cloud architecture</li>
+    <li>Designed and implemented multiple ETL pipelines providing access to research and production data</li>
+    <li>Integrated SAP PLM to extract and process laboratory research data</li>
+    <li>Integrated the manufacturing execution system (MES) for data extraction and processing</li>
+    <li>Built an OpenSearch index for semantic search (vector search / k-NN)</li>
+    <li>Transferred knowledge to internal staff</li>
     </ul>
 
 # gfk
-- project: Data warehouse migration
+- project: Migration of an on-premises data warehouse to AWS
   industry: Market research
-  role: Cloud Architect
-  duration: Jul, 2021 &mdash; Oct, 2023
-  technologies: AWS Cloud, LakeFormation, Glue, EMR, Athena, Lambda, SQS, S3, Docker, Spark, Hadoop, Airflow, Terraform, Python, GitLab
-  # url: "#"
+  role: Data Architect & Engineer
+  duration: Jul 2021 &ndash; Oct 2023
+  technologies: AWS (Glue, EMR, Lake Formation), Airflow, Databricks, Terraform, Python, Java, SQL, Cloudera, Hadoop, Hive, Pig, Oozie, GitLab
   description: >
-    Concept and support of an on-premise data warehouse migration towards the cloud.
     <ul class="resume-item-list">
-    <li>Design and implementation of a cloud-based data warehouse infrastructure based on AWS Managed Services</li>
-    <li>Help in migrating various data processing jobs from Cloudera to AWS Managed Services</li>
-    <li>Design and implementation of deployment pipelines for testing and rollout</li>
-    <li>Workshops and knowledge transfer on cloud and data architecture, process design</li>
+    <li>Evaluated Databricks/Delta Lake against AWS managed services/Hudi as the foundation of a data lake</li>
+    <li>Designed and built the data warehouse on AWS Lake Formation and the Glue Data Catalog (~1.5 TB data lake)</li>
+    <li>Migrated 100+ ETL jobs (Spark, Hive, Pig) from Cloudera to AWS Glue and Amazon EMR, with shorter runtimes through elastic scaling</li>
+    <li>Replaced Oozie with Airflow for workflow orchestration</li>
+    <li>Designed and implemented several GitLab CI/CD pipelines</li>
+    <li>Trained internal staff and transferred knowledge</li>
     </ul>
 
-# rtlplus
-- project: Cloud based data warehouse
-  industry: Entertainment
-  role: Data Engineer
-  duration: Jun, 2020 &mdash; Dec, 2022
-  technologies: AWS Cloud, Kubernetes, Docker, Spark, Airflow, Kafka, Terraform, Python, Kustomize, GitLab
-  # url: "#"
+# rtl group
+- project: Cloud-based data warehouse for user data analytics
+  industry: Media
+  role: Data Architect & Lead Engineer
+  duration: Jun 2020 &ndash; Dec 2022
+  technologies: AWS, Kinesis, Kubernetes, Istio, Docker, Kafka, Kafka Streams, Braze, Airflow, Python, PySpark, Pandas, Avro, Terraform, Kustomize, Power BI
   description: >
-    Design and implementation of a cloud-based data ware house for processing user related data.
     <ul class="resume-item-list">
-    <li>Implemented workflows to fetch data from various third-party providers</li>
-    <li>Building and enabling a team to create new ETL processes</li>
-    <li>Realtime integration of a market automation software suite</li>
-    <li>Implemented modern ETL processing environment using Airflow, Spark and Kubernetes</li>
-    <li>General advice on data architecture and data management</li>
+    <li>Designed and built the cloud infrastructure for the data warehouse</li>
+    <li>Introduced a decentralized data mesh architecture, including governance guidelines</li>
+    <li>Documented architecture decisions as ADRs and presented them to the architecture board</li>
+    <li>Integrated Airflow as the workflow engine and the Spark on Kubernetes operator as the ETL runtime</li>
+    <li>Built and led a 6-person team developing ETL processes for 4 data sources; implemented several ETL jobs in PySpark</li>
+    <li>Implemented an event streaming pipeline for real-time analytics, including a real-time Braze integration with under 1 second latency</li>
+    <li>Prepared data for downstream analysis in Power BI and advised on the overall data architecture</li>
     </ul>
 
 # swarovski
-- project: Sensor data processing
-  industry: Consumer Goods
-  role: Solution Architect
-  duration: Aug, 2019 &mdash; Dec, 2019
-  # url: "#"
-  technologies: AWS Cloud, Kubernetes, Kafka, Spark, Bamboo, Java, Docker, Terraform
+- project: Sensor data processing platform and extension of a data science environment
+  industry: Manufacturing
+  role: Cloud & Data Engineer
+  duration: Aug 2019 &ndash; Dec 2019
+  technologies: AWS, Kubernetes, Helm, CloudFormation, Kafka, Kafka Connect, PySpark, InfluxDB, Java, Python, Docker, Bamboo
   description: >
-    Design of AWS managed infrastructure platform for sensor data processing, extension of an existing data science environment.
     <ul class="resume-item-list">
-    <li>Advice on design and tools for building a Kubernetes based infrastructure platform for sensor data processing</li>
-    <li>Design and implementation of infrastructure components on Kubernetes</li>
-    <li>Design and implementation of the ETL pipeline for data collection</li>
-    <li>Design and implementation of CI/CD pipeline with Bamboo & Kubernetes</li>
+    <li>Advised on the design and tooling of a Kubernetes-based infrastructure for sensor data processing</li>
+    <li>Designed and built the infrastructure on Kubernetes (Kafka cluster, Spark, ZooKeeper)</li>
+    <li>Designed and built the ETL pipeline for data ingestion</li>
+    <li>Designed and built a CI/CD pipeline with Bamboo and Kubernetes</li>
     </ul>
 
 # volkswagen
-- project: Data analytics on car measurement data
+- project: Cloud-based data warehouse for vehicle data; evaluation of a data science environment
   industry: Automotive
   role: Data Engineer
-  duration: Jan, 2019 &mdash; Mar, 2020
-  # url: "#"
-  technologies: AWS Cloud, Lambda, IAM, Airflow, Kubernetes, Terraform, Python, Jenkins
+  duration: Jan 2019 &ndash; Mar 2020
+  technologies: AWS (Lambda, IAM), Kubernetes, Kubeflow, Docker, Helm, Databricks, Terraform, Python, OpenSearch, Logstash, Kibana
   description: >
-    Design and implementation of a cloud-based data warehouse for evaluation of vehicle data.
-    Design and implementation of a data science environment.
     <ul class="resume-item-list">
-    <li>Extented a prototype and put into operational readiness for a production environment</li>
-    <li>Design and implementation of a CI / CD pipeline</li>
-    <li>Setup of project structure and release management</li>
-    <li>Implemented various ETL pipelines for car measurement data collection, validation and transformation</li>
+    <li>Extended a prototype for large-scale data processing and brought it into production, improving runtime by a factor of 10</li>
+    <li>Built and launched a CI/CD pipeline; set up project structure and release management</li>
+    <li>Designed, implemented and deployed a backend API, including a Helm chart</li>
+    <li>Built ETL pipelines for vehicle data validation, ingestion and indexing of millions of documents in OpenSearch</li>
+    <li>Implemented feature extraction from vehicle data</li>
+    <li>Evaluated Kubeflow and Databricks/Delta Lake</li>
     </ul>
-
 
 # swarovski
-- project: Data science environment
-  industry: Consumer Goods
-  role: Data Engineer
-  duration: Oct, 2017 &mdash; Nov, 2018
-  # url: "#"
-  technologies: AWS Cloud, Kubernetes, Spark, R, NiFi, Terraform, Docker, Jupyter NB
+- project: Cloud-based data warehouse and data science environment
+  industry: Manufacturing
+  role: Data Architect & Engineer
+  duration: Oct 2017 &ndash; Nov 2018
+  technologies: AWS, CloudFormation, Kubernetes, Docker, Spark, R, Apache NiFi, Python, Jupyter
   description: >
-    Design and implementation of a cloud-based data warehouse & data science environment.
     <ul class="resume-item-list">
-    <li>Designing data warehouse architecture & data storage strategies</li>
-    <li>Architecture proposal of a dynamically scalable data warehouse</li>
-    <li>Implementation of infrastructure components in Terraform & Kubernetes</li>
-    <li>Implementation of infrastructure components in Kubernetes</li>
-    <li>Development of ETL pipelines for data collection</li>
+    <li>Designed a dynamically scalable data warehouse and its data model and storage layout</li>
+    <li>Implemented the infrastructure as code with CloudFormation and infrastructure components on Kubernetes</li>
+    <li>Built ETL pipelines for data ingestion</li>
     </ul>
-
 
 # aixigo
-- project: Micro service architecture
-  industry: Financial services
-  role: System Architect
-  duration: May, 2017 &mdash; Dec, 2018
-  # url: "#"
-  technologies: Micro Services, Java, Docker, Kafka, Liquibase, Jenkins
+- project: Design and implementation of a microservice architecture
+  industry: Financial software
+  role: Data Architect
+  duration: May 2017 &ndash; Dec 2018
+  technologies: Java, Kafka, Docker, Liquibase, microservices
   description: >
-    Support conception and implementation/migration of a monolith into a micro service architecture.
     <ul class="resume-item-list">
-    <li>Alignment and coordination of different teams regarding technology usage</li>
-    <li>Introduction of Kafka as the central message bus for micro service communications</li>
-    <li>Introduction of LiquiBase for database schema management</li>
-    <li>Professional / technical support for a specific micro service</li>
+    <li>Aligned and coordinated several teams on technology choices</li>
+    <li>Co-designed core elements: (de)serializers, data pipeline design, error and message handling, database design</li>
+    <li>Introduced Kafka as the central message bus for microservices</li>
+    <li>Introduced Liquibase for database schema management</li>
+    <li>Provided functional and technical ownership of one microservice</li>
     </ul>
 
-
-# open grid
-- project: Big Data vendor evaluation
+# open grid europe
+- project: Evaluation of big data vendors
   industry: Energy
   role: Requirements Engineer
-  duration: Mar, 2017
-  # url: "#"
-  technologies: Hortonworks, Cloudera, SAP Cloud, Apache NiFi, AWS Cloud, MS Azure, Terraform
+  duration: Mar 2017
+  technologies: Hortonworks, Cloudera, SAP Cloud, Apache NiFi, Parquet, AWS, Microsoft Azure
   description: >
-    Support in evaluating big data providers
     <ul class="resume-item-list">
-    <li>Acquisition and documentation of the technical requirements for setting up and operating an Apache Hadoop based data warehouse</li>
-    <li>Obtaining offers from various providers, preparing information for decision-making</li>
-    <li>Implementation of a prototype for data collection</li>
+    <li>Gathered and documented technical and business requirements for building and operating a Hadoop-based data warehouse</li>
+    <li>Requested vendor proposals and prepared the information for decision-making</li>
+    <li>Implemented a data ingestion prototype</li>
     </ul>
-
 
 # gfk
-- project: Big Data warehouse
+- project: Big data warehouse on AWS
   industry: Market research
-  role: Data Engineer
-  duration: Jan, 2017 &mdash; Aug, 2017
-  # url: "#"
-  technologies: Spark, SparkR, Hadoop, Hive, Jupyter, AWS Cloud, R, Bamboo, Terraform
+  role: Lead Data Engineer
+  duration: Jan 2017 &ndash; Aug 2017
+  technologies: AWS, Spark, SparkR, Cloudera, Hadoop, Hive, Avro, Python, R, Jupyter, Bamboo, Terraform
   description: >
-    Design and implementation of a cloud-based big data warehouse in the AWS Cloud for market research analytics.
     <ul class="resume-item-list">
-    <li>Technical project management</li>
-    <li>Design of an architecture based on AWS cloud infrastructure and managed services</li>
-    <li>Implementation of ETL data pipelines</li>
-    <li>Development of data warehouse / workflow management</li>
-    <li>Data preparation / process management</li>
+    <li>Led the project technically and designed the AWS cloud infrastructure</li>
+    <li>Implemented data pipelines, the data warehouse and workflow management</li>
+    <li>Handled data preparation and process management</li>
     </ul>
 
-# basel
-- project: Workshop Big Data technologies
-  industry: Education
-  role: Data Engineer
-  duration: Oct, 2016
-  # url: "#"
-  technologies: Hadoop, Spark, AWS Cloud, MapReduce, Hive, Pig, R, Terraform
+# ---------------------------------------------------------------------------
+# Earlier projects (2010 – 2016)
+
+# university hospital basel
+- project: Workshop on big data technologies
+  earlier: true
+  industry: Healthcare
+  role: Data Engineer (Trainer)
+  duration: Oct 2016
+  technologies: Hadoop, Spark, MapReduce, Hive, Pig, ORC, Avro, R, AWS
   description: >
-    Workshop Big Data Technologies - Introduction and Getting Started.
     <ul class="resume-item-list">
-    <li>Conducting a 3-day workshop</li>
-    <li>Introduction to Big Data / Hadoop ecosystem</li>
-    <li>Practical exercise using big data tools in the AWS Cloud</li>
+    <li>Delivered a three-day workshop introducing the big data/Hadoop ecosystem, with hands-on exercises on AWS</li>
     </ul>
 
 # helix leisure
-- project: Architecture Review
-  industry: Entertainment
+- project: Architecture review and real-time streaming layer
+  earlier: true
+  industry: Entertainment technology
   role: Data Engineer
-  duration: Jun, 2016 &mdash; Dec, 2016
-  # url: "#"
-  technologies: Hadoop, Spark, AWS Cloud, Scala, MapReduce, JCascalog, RedShift
+  duration: Jun 2016 &ndash; Dec 2016
+  technologies: Hadoop, Spark, Scala, Protocol Buffers, MapReduce, JCascalog, Redshift, AWS, CloudFormation
   description: >
-    Architecture review and design and implementation of a realtime aggregator for machine statistics.
     <ul class="resume-item-list">
-    <li>Review and assessment of the existing architecture and data model design</li>
-    <li>Implementation workshop data management/Lambda architecture</li>
-    <li>Design and implementation of a realtime layer with Spark Streaming</li>
+    <li>Reviewed the existing architecture and data model; ran a workshop on data management and Lambda architecture</li>
+    <li>Designed and implemented a real-time layer with Spark Streaming and integrated it with the batch layer</li>
     </ul>
 
 # otto
-- project: ETL Pipelines
-  industry: Online retail
-  role: Software Engineer
-  duration: Feb, 2016 &mdash; Jul, 2016
-  # url: "#"
-  technologies: Hadoop, Hive, Spark, Redis, Kafka, Avro, Scala, HCatalog, Schedoscope
+- project: ETL pipelines for a Hadoop-based data warehouse
+  earlier: true
+  industry: E-commerce
+  role: Data Engineer
+  duration: Feb 2016 &ndash; Jul 2016
+  technologies: Hadoop, Hive, HCatalog, Spark, Kafka, Redis, Avro, Scala, Schedoscope
   description: >
-    Support in the development of ETL processes on a Hadoop based DWH.
     <ul class="resume-item-list">
-    <li>Planning and implementation of a hive export module</li>
-    <li>Implementation of a Kafka & Redis export module as part of an open source project</li>
-    <li>Implementation of an analysis algorithm for click stream analytics</li>
+    <li>Built a Hive export module and Kafka and Redis export modules for the open-source project Schedoscope</li>
+    <li>Implemented an algorithm for clickstream analysis</li>
     </ul>
 
-
 # gfk
-- project: CI/CD Pipelines
+- project: Continuous delivery pipeline for a data-driven application on AWS
+  earlier: true
   industry: Market research
   role: DevOps Engineer
-  duration: Dec, 2015 &mdash; Aug, 2016
-  # url: "#"
-  technologies: AWS Cloud, Hadoop, Spark, Bamboo, Git, Terraform, Vagrant, InfluxDB
+  duration: Dec 2015 &ndash; Aug 2016
+  technologies: AWS, Hadoop, Spark, Terraform, Vagrant, Bamboo, Git, InfluxDB
   description: >
-    Design and implementation of a continuous deployment & delivery pipeline for data-driven applications in cloud environments.
     <ul class="resume-item-list">
-    <li>Design and implementation of a big data infrastructure in the AWS Cloud</li>
-    <li>Design and implementation of a continuous deployment pipeline</li>
-    <li>Technical management of an customer internal team</li>
+    <li>Planned and built a big data infrastructure on AWS and a continuous deployment pipeline</li>
+    <li>Led the client's internal team technically</li>
     </ul>
 
 # radioopt
-- project: Data warehouse
-  industry: Technology
+- project: Big data warehouse for OLAP workloads
+  earlier: true
+  industry: Telecommunications
   role: Data Engineer
-  duration: Jul, 2015 &mdash; Oct, 2015
-  # url: "#"
-  technologies: Hadoop, Impala, Hive, ETL, AWS Cloud
+  duration: Jul 2015 &ndash; Oct 2015
+  technologies: Hadoop, Impala, Hive, AWS
   description: >
-    Conception and implementation of a data ware house based on big data technologies - OLAP workload.
     <ul class="resume-item-list">
-    <li>Planning and implementation of the cluster infrastructure</li>
-    <li>Evaluation of various input formats with regard to performance</li>
-    <li>Preparation, execution and documentation of load tests</li>
+    <li>Planned and built the cluster infrastructure, benchmarked input formats for performance, and prepared and ran load tests</li>
     </ul>
 
 # technicolor
-- project: Data analytics on wifi device data
-  industry: Consumer Goods
-  role: Data Engineer
-  duration: Jul, 2014 &mdash; Jun, 2015
-  # url: "#"
-  technologies: Hadoop, Samza, Spark, Kafka, Java, ETL, AWS
+- project: Batch and real-time processing of machine data
+  earlier: true
+  industry: Media technology
+  role: Lead Data Engineer
+  duration: Jul 2014 &ndash; Jun 2015
+  technologies: Hadoop, Samza, Spark, Kafka, Java, AWS, CloudFormation
   description: >
-    Design and implementation of a big data system for batch and real-time data processing of machine generated data.
     <ul class="resume-item-list">
-    <li>Planning and implementation of the deployment environment</li>
-    <li>Evaluation of various technologies for data acquisition / data processing</li>
-    <li>Implementation of a distributed, fail-safe high throughput messaging and analysis system for machine data (Lambda Architecture)</li>
-    <li>Technical management of a team</li>
+    <li>Implemented a distributed, fault-tolerant, high-throughput messaging and analytics system for machine data (Lambda architecture)</li>
+    <li>Planned the deployment environment, evaluated data ingestion and processing technologies, and led the team technically</li>
     </ul>
 
-# ubisoft
-- project: Game Analytics
-  industry: Entertainment
-  role: Data Engineer
-  duration: Mar, 2013 &mdash; Sep, 2014
-  # url: "#"
-  technologies: Hadoop, Map / Reduce, Kafka, Hive, ETL, Java, Linux
+# ubisoft / blue byte
+- project: Hadoop-based data warehouse for game analytics
+  earlier: true
+  industry: Gaming
+  role: Lead Data Engineer
+  duration: Mar 2013 &ndash; Sep 2014
+  technologies: Hadoop, MapReduce, Kafka, Hive, Java, Linux
   description: >
-    Design and implementation of Hadoop based data warehouse for online game analytics.
     <ul class="resume-item-list">
-    <li>Planning and implementation of a data warehouse</li>
-    <li>Evaluation of different approaches for data collection</li>
-    <li>Selection of suitable technologies</li>
-    <li>Technical management / coordination of a distributed team (GER, CN, CAN)</li>
-    <li>Implementation of a distributed, fail-safe high throughput messaging system</li>
+    <li>Planned and built the data warehouse, including a distributed, fault-tolerant, high-throughput messaging system</li>
+    <li>Led and coordinated a distributed team across Germany, China and Canada</li>
     </ul>
 
-
-# telekom
-- project: Hadoop on Demand
-  industry: Telecommunication
+# deutsche telekom
+- project: Big data infrastructure in virtualized environments
+  earlier: true
+  industry: Telecommunications
   role: DevOps Engineer
-  duration: Feb, 2013 &mdash; Jun, 2014
-  # url: "#"
-  technologies: Hadoop, OpenStack, Opscode Chef, Java, Linux
+  duration: Feb 2013 &ndash; Jun 2014
+  technologies: Hadoop, OpenStack, Chef, Java, Linux
   description: >
-    Design and implementation of a big data infrastructure in virtualized environments.
     <ul class="resume-item-list">
-    <li>Planning and implementation of a big data deployment infrastructure</li>
-    <li>Implementation deployment process for Hadoop Cluster on demand in a virtualized environment</li>
-    <li>Prototype implementation of various algorithms with the map/reduce framework</li>
+    <li>Built a deployment process for on-demand Hadoop clusters on OpenStack</li>
+    <li>Prototyped several algorithms in MapReduce</li>
     </ul>
 
 # gfk
-- project: Geo location data analytics
+- project: Big data architecture for telecommunications data
+  earlier: true
   industry: Market research
-  role: DevOps Engineer
-  duration: Nov, 2012 &mdash; Aug, 2015
-  # url: "#"
-  technologies: Apache Hadoop, Hive, Flume, Java, Spring, Puppet, Ubuntu Linux, AWS
+  role: Cloud & Data Engineer
+  duration: Nov 2012 &ndash; Aug 2015
+  technologies: Cloudera, Hadoop, Hive, Flume, Java, Spring, Puppet, Ubuntu, AWS
   description: >
-    Design and implementation of a big data architecture for evaluating telecommunications data.
     <ul class="resume-item-list">
-    <li>Planning and implementation of the network setup</li>
-    <li>Planning and implementation of a medium sized Hadoop cluster</li>
-    <li>Set up deployment process, including monitoring</li>
-    <li>Implementation of a data integration framework for high volume data storage</li>
+    <li>Planned and built the network (AWS VPC) and a 100 TB Hadoop cluster, including deployment and monitoring</li>
+    <li>Implemented a data ingestion framework storing ~300 GB of data per day</li>
+    </ul>
+
+# exactag
+- project: Design and rollout of a Hadoop cluster
+  earlier: true
+  industry: Marketing analytics
+  role: Data Engineer
+  duration: May 2012 &ndash; Dec 2012
+  technologies: Cloudera, Hadoop, Hive, Pig, Python, Java, Maven, Puppet, Debian
+  description: >
+    <ul class="resume-item-list">
+    <li>Advised on the cluster design, selected the hardware, set up the deployment process and rolled out the cluster</li>
+    <li>Ported existing statistics routines to MapReduce</li>
+    </ul>
+
+# etracker
+- project: Re-implementation of an analytics tool as a MapReduce application
+  earlier: true
+  industry: Web analytics
+  role: Data Engineer
+  duration: Jun 2011 &ndash; Mar 2012
+  technologies: Cloudera, Hadoop, HBase, Java, Maven, Ganglia, Chef, PHP, Debian
+  description: >
+    <ul class="resume-item-list">
+    <li>Ported an existing implementation to MapReduce using the Hadoop Streaming API</li>
+    <li>Installed and configured a Hadoop cluster with monitoring and set up the deployment process</li>
+    </ul>
+
+# aupeo
+- project: Payment provider integration
+  earlier: true
+  industry: Music streaming
+  role: Backend Developer
+  duration: Sep 2010 &ndash; Feb 2011
+  technologies: Ruby on Rails, OAuth, MySQL, Git, Debian
+  description: >
+    <ul class="resume-item-list">
+    <li>Integrated a payment provider into the existing backend</li>
+    <li>Mapped, converted and imported data, including text matching against the existing database</li>
+    </ul>
+
+# openlimit signcubes
+- project: Signature component for an email client
+  earlier: true
+  industry: Security software
+  role: Backend Developer
+  duration: May 2010 &ndash; Sep 2010
+  technologies: C++, Qt, KDE, Ubuntu
+  description: >
+    <ul class="resume-item-list">
+    <li>Integrated a digital signature component into KMail, including debug environment setup and testing</li>
     </ul>
