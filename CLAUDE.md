@@ -35,13 +35,13 @@ Builds run in the custom image `public.ecr.aws/docker/library/ruby:3.4` (app env
 
 ## Architecture
 
-This is a **Jekyll static site** — a personal resume/CV for Christian Richter (Data Engineer & Cloud Architect). The architecture separates content (YAML data) from presentation (HTML/SCSS).
+This is a **Jekyll static site** — a personal resume/CV for Christian Richter (Data & AI Engineer). The architecture separates content (YAML data) from presentation (HTML/SCSS).
 
 ### Content lives in `_data/`
 
 All resume content is stored as YAML files: `experience.yml`, `projects.yml`, `skills.yml`, `education.yml`, `services.yml`, `additional.yml`, `references.yml`, `links.yml`. Editing resume content means editing these files.
 
-Content source of truth is the English reference CV (`~/Nextcloud/CV/ai/CV_Christian_Richter_EN_2026.docx`, rules in `~/Nextcloud/CV/ai/CLAUDE.md`). The website shows no client names in projects (generic titles + industry only). Projects with `earlier: true` render in the "Earlier Projects" section.
+Content source of truth is the English reference CV (`~/Nextcloud/CV/ai/CV_Christian_Richter_EN_2026.docx`, rules in `~/Nextcloud/CV/ai/CLAUDE.md`). Exception: the website headline "Data & AI Engineer" deliberately differs from the CV headline "Data Engineer & Cloud Architect" to compare positioning per channel (since 2026-10-27); don't sync it back. The website shows no client names in projects (generic titles + industry only). Projects with `earlier: true` render in the "Earlier Projects" section.
 
 ### Presentation in `_layouts/` and `_includes/`
 
@@ -58,7 +58,13 @@ Controls site metadata, contact info, the intro paragraph (`resume_header_intro`
 
 ### Static pages
 
-`services.html`, `impressum.html`, `dsgvo.html` are standalone Jekyll pages outside the main resume layout. The pipeline patterns on `services.html` live in `_data/pipelines.yml` and are drawn by `_includes/pipeline-diagram.html` (HTML/CSS boxes, styles in `_resume.scss`).
+`services.html`, `impressum.html`, `dsgvo.html`, `agent-ready-data.html` are standalone Jekyll pages outside the main resume layout. The pipeline patterns on `services.html` live in `_data/pipelines.yml` and are drawn by `_includes/pipeline-diagram.html` (HTML/CSS boxes, styles in `_resume.scss`).
+
+`agent-ready-data.pdf` (linked from the agent page) is printed from `_pdf/agent-ready-data.html`, a standalone two-page A4 version of that page (not published; loads fonts from `../fonts/`). Keep both in sync and regenerate the PDF from the repo root after every change:
+
+```bash
+google-chrome --headless --no-pdf-header-footer --print-to-pdf=agent-ready-data.pdf _pdf/agent-ready-data.html
+```
 
 ### JavaScript
 
