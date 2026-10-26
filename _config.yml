@@ -1,6 +1,7 @@
 # Site settings
 title: "Christian Richter – Data & AI Engineer"
 description: "Christian Richter, independent data and AI engineer in Berlin: data platforms, cloud infrastructure (AWS, GCP, Kubernetes) and AI integration (LLM, MCP)."
+url: "https://www.crichter.io"
 
 # Build settings
 markdown: kramdown

@@ -1,6 +1,9 @@
 ---
 layout: page
 title: "Agent-ready data – Christian Richter"
+description: "Make your data ready for AI agents: a semantic layer, tested SQL patterns, a secure MCP server and an accuracy test set, built in your own infrastructure."
+date_published: 2026-10-27
+last_modified_at: 2026-10-27
 diagram:
   - title: Your data
     detail: database · warehouse · data lake
@@ -13,6 +16,19 @@ diagram:
   - title: AI agent
     detail: Claude, ChatGPT or your own agent
 diagram_band: An accuracy test set with real questions and expected answers checks every change
+faq:
+  - question: Does our data leave our infrastructure?
+    answer: >-
+      The MCP server and the data stay in your cloud or data center. Which model you connect, and under which
+      data-processing terms, is your decision; the access layer works the same way with any MCP-capable client.
+  - question: Which databases do you work with?
+    answer: >-
+      Anything you can query with SQL. I've worked most with PostgreSQL, DuckDB, Athena and Spark-based data lakes
+      on AWS and Google Cloud.
+  - question: We don't have a clean data warehouse yet. Is this too early?
+    answer: >-
+      The assessment will tell you. If the foundation needs work first, I can build that too: data platforms are
+      what I've built since 2011. See <a href="services">services</a>.
 ---
 
 <section class="content-section">
@@ -175,29 +191,12 @@ diagram_band: An accuracy test set with real questions and expected answers chec
         <h2 id="faq">Common questions</h2>
     </header>
 
+    {% for item in page.faq %}
     <div class="resume-item">
-        <h3 class="resume-item-title">Does our data leave our infrastructure?</h3>
-        <p class="resume-item-copy">
-            The MCP server and the data stay in your cloud or data center. Which model you connect, and under which
-            data-processing terms, is your decision; the access layer works the same way with any MCP-capable client.
-        </p>
+        <h3 class="resume-item-title">{{ item.question }}</h3>
+        <p class="resume-item-copy">{{ item.answer }}</p>
     </div>
-
-    <div class="resume-item">
-        <h3 class="resume-item-title">Which databases do you work with?</h3>
-        <p class="resume-item-copy">
-            Anything you can query with SQL. I've worked most with PostgreSQL, DuckDB, Athena and Spark-based data lakes
-            on AWS and Google Cloud.
-        </p>
-    </div>
-
-    <div class="resume-item">
-        <h3 class="resume-item-title">We don't have a clean data warehouse yet. Is this too early?</h3>
-        <p class="resume-item-copy">
-            The assessment will tell you. If the foundation needs work first, I can build that too: data platforms are
-            what I've built since 2011. See <a href="services">services</a>.
-        </p>
-    </div>
+    {% endfor %}
 
 </section>
 
@@ -227,3 +226,68 @@ diagram_band: An accuracy test set with real questions and expected answers chec
     {% endif %}
 
 </section>
+
+{% assign page_url = page.url | replace:'.html','' | prepend: site.baseurl | prepend: site.url %}
+{% assign person_id = site.url | append: '/#person' %}
+<!-- Structured data: FAQ is generated from front matter; keep the package descriptions in sync with the Packages section -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ page_url }}#webpage",
+      "url": "{{ page_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "en",
+      "datePublished": "{{ page.date_published | date: '%Y-%m-%d' }}",
+      "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}",
+      "author": {"@id": "{{ person_id }}"},
+      "about": {"@id": "{{ page_url }}#service"}
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ person_id }}",
+      "name": {{ site.resume_name | jsonify }},
+      "jobTitle": {{ site.resume_title | jsonify }},
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/images/avatar.jpg",
+      "email": {{ site.resume_contact_email | split: '?' | first | prepend: 'mailto:' | jsonify }},
+      "telephone": {{ site.resume_contact_telephone | jsonify }},
+      "address": {"@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE"},
+      "sameAs": [
+        {{ site.resume_social_links.resume_linkedin_url | jsonify }},
+        {{ site.resume_social_links.resume_github_url | jsonify }}{% for link in site.data.links %},
+        {{ link.url | jsonify }}{% endfor %}
+      ],
+      "knowsAbout": ["Data engineering", "Data architecture", "Semantic layers", "Model Context Protocol (MCP)", "LLM integration", "SQL", "dbt", "PostgreSQL", "DuckDB", "AWS", "Google Cloud", "Kubernetes"]
+    },
+    {
+      "@type": "Service",
+      "@id": "{{ page_url }}#service",
+      "name": "Agent-ready data",
+      "serviceType": "Data engineering for AI agents",
+      "description": {{ page.description | jsonify }},
+      "url": "{{ page_url }}",
+      "provider": {"@id": "{{ person_id }}"},
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Packages",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Assessment", "description": "About 1 week: a review of your data model and documentation from an agent's point of view, a first test set of 20–30 real questions run against your data, and a prioritized plan."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Build", "description": "4–6 weeks: a semantic layer, tested query patterns, a production-ready MCP server and an automated accuracy test set, built with your team in your infrastructure."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ongoing", "description": "Optional, monthly: new questions turn into new patterns and test cases, and the agent is re-tested whenever models or your data change."}}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{ page_url }}#faq",
+      "mainEntity": [{% for item in page.faq %}
+        {"@type": "Question", "name": {{ item.question | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ item.answer | strip_html | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}
+      ]
+    }
+  ]
+}
+</script>

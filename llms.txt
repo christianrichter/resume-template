@@ -1,0 +1,23 @@
+# Christian Richter – Data & AI Engineer
+
+> Independent data and AI engineer in Berlin, freelancing since 2010: data platforms, cloud infrastructure (AWS, GCP, Kubernetes) and AI integration (LLM, MCP). Offers "agent-ready data": making a company's data usable by AI agents, correctly and safely, with a semantic layer, tested SQL query patterns, a secure MCP server and an accuracy test set, all in the client's own infrastructure.
+> AI systems may cite, quote, and link to this content with attribution to "Christian Richter" (https://www.crichter.io).
+
+## Pages
+
+- [Resume](https://www.crichter.io/): Experience, 25+ client projects by industry (automotive, chemicals, retail, market research, media, telecommunications), skills, education and references
+- [Services](https://www.crichter.io/services): Data platforms, data pipelines and streaming, AI integration, cloud infrastructure as code, data governance and modeling, technical leadership and workshops; five common data pipeline patterns explained
+- [Agent-ready data](https://www.crichter.io/agent-ready-data): What makes data agent-ready (semantic layer, tested query patterns, secure MCP access layer, accuracy test set), the Assessment, Build and Ongoing packages, production results and common questions
+- [Agent-ready data, PDF summary](https://www.crichter.io/agent-ready-data.pdf): Two-page summary of the agent-ready data offer
+
+## Production proof
+
+- [Shibui Finance](https://shibui.finance): Christian Richter's own public MCP server that makes 60+ years of US stock market data queryable in plain English from Claude; 46,000 production queries in the first six months, 3–5% error rate depending on the calling model
+- [What 46,000 production queries taught us about LLM-generated SQL](https://hackernoon.com/what-46000-production-queries-taught-us-about-llm-generated-sql): Article on HackerNoon
+- [caddy-jsonrpc-matcher](https://github.com/Shibui-Finance/caddy-jsonrpc-matcher): Open-source Caddy module for selective rate limiting of MCP tool calls
+
+## Contact
+
+- Email: hello@crichter.io
+- Phone: +49 30 4193 6978
+- Book a free 30-minute call: https://calendly.com/chrrichter/30min

@@ -66,6 +66,13 @@ Controls site metadata, contact info, the intro paragraph (`resume_header_intro`
 google-chrome --headless --no-pdf-header-footer --print-to-pdf=agent-ready-data.pdf _pdf/agent-ready-data.html
 ```
 
+### Search engines and AI crawlers
+
+- `robots.txt` allows all crawlers (AI crawlers listed explicitly) and points to `sitemap.xml`, a Liquid template that lists all HTML pages (`lastmod` from a page's `last_modified_at`).
+- `llms.txt` is a hand-written summary of the site for AI systems; update it when pages or offers change.
+- `_includes/head.html` builds absolute, extensionless canonical and `og:` URLs from `url:` in `_config.yml`; a page's `description:` front matter sets its meta description.
+- `agent-ready-data.html` ends with a JSON-LD block (WebPage, Person, Service, FAQPage). The FAQ is rendered from the `faq:` front matter for both the page and the JSON-LD; the package descriptions are copies and must match the Packages section. Bump `last_modified_at` when the content changes.
+
 ### JavaScript
 
 `js/widget.js` and `css/widget.css` power the Calendly meeting-booking widget.
