@@ -8,6 +8,10 @@ sass:
   sass_dir: _sass
   style: compressed
   sourcemap: never
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Dockerfile
 
 # Resume settings
 resume_avatar:                  "true"
