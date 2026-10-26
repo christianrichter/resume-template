@@ -24,13 +24,14 @@ docker image build -t resume-template .
 docker run --rm --name resume-template -v "$PWD":/home/app --network host resume-template
 ```
 
-The host Ruby (3.x) cannot run the locked Jekyll 3.8 / `github-pages` 204 without extra gems, so Docker is the reliable local preview.
+Jekyll 4.4 (plain `jekyll` gem, no `github-pages`) needs Ruby >= 3.2. Local Ruby is 3.4 via rvm; the Docker image uses the official `ruby:3.4`, the same Ruby Amplify builds with.
 
 ### Deployment
 
 AWS Amplify app `resume` (`drpwo2606hncl`, eu-central-1) auto-builds branch `cv` and serves `crichter.io` / `www.crichter.io`.
 **Pushing to `origin/cv` deploys to production.** Check a deploy with
-`aws amplify list-jobs --app-id drpwo2606hncl --branch-name cv`.
+`aws --profile richter amplify list-jobs --app-id drpwo2606hncl --branch-name cv`.
+Builds run in the custom image `public.ecr.aws/docker/library/ruby:3.4` (app env var `_CUSTOM_IMAGE`) with the build spec stored in the Amplify console (`bundle install`, `bundle exec jekyll build`, artifacts in `_site`).
 
 ## Architecture
 

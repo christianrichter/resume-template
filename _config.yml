@@ -7,6 +7,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+  sourcemap: never
 
 # Resume settings
 resume_avatar:                  "true"
