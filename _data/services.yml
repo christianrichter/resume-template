@@ -7,7 +7,7 @@
   description: Design and operation of ETL/ELT, streaming and ML pipelines (Spark, Kafka, Airflow, dbt) at terabyte scale
 
 - service: AI integration
-  description: "AI-assisted data processing: document extraction, semantic search and workflow automation with LLM tool integration (MCP), including a self-built MCP server in production"
+  description: "AI-assisted data processing: document extraction, semantic search and workflow automation with LLM tool integration (MCP), including a self-built MCP server in production. See <a href=\"agent-ready-data\">agent-ready data</a>."
 
 - service: Cloud infrastructure as code
   description: Cloud-native infrastructure as code (Terraform, Helm, GitOps), including high-availability and disaster-recovery concepts

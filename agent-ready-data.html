@@ -1,0 +1,229 @@
+---
+layout: page
+title: "Agent-ready data – Christian Richter"
+diagram:
+  - title: Your data
+    detail: database · warehouse · data lake
+  - title: Semantic layer
+    detail: tables · columns · metrics, described once
+  - title: Query patterns
+    detail: tested SQL for the tricky logic
+  - title: MCP server
+    detail: read-only · validated · authenticated
+  - title: AI agent
+    detail: Claude, ChatGPT or your own agent
+diagram_band: An accuracy test set with real questions and expected answers checks every change
+---
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="agent-ready-data">Agent-ready data: let AI agents use your data, correctly and safely</h2>
+    </header>
+
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            Your team wants to ask questions of your data in plain language, through Claude, ChatGPT or an agent of your
+            own. The first demo looks great. Then the answers turn out to be wrong in ways nobody notices at first: a
+            column misread, a join that double-counts, a date filter that quietly uses information that wasn't available
+            at the time. And nobody is comfortable giving an AI model access to production data.
+        </p>
+        <p class="resume-item-copy">
+            I make your data ready for AI agents: a semantic layer that explains what the data means, tested query
+            patterns for the tricky business logic, a secure access layer built on the Model Context Protocol (MCP),
+            and a test set that measures how often the agent gets the answer right. Fixed scope, fixed price, and
+            everything runs in your own infrastructure.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="building-blocks">What makes data agent-ready</h2>
+    </header>
+
+    <div class="resume-item">
+        {% include pipeline-diagram.html steps=page.diagram band=page.diagram_band label="Agent-ready data" %}
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">1. A semantic layer</h3>
+        <p class="resume-item-copy">
+            Every table, column and metric gets one clear name and one description, maintained with the data models
+            (for example in dbt). The agent sees what a column means, not just its type, and the same definitions serve
+            your analysts and dashboards.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">2. Tested query patterns</h3>
+        <p class="resume-item-copy">
+            The questions that are easy to get wrong (point-in-time logic, deduplication, the right join between two
+            business dates) get a tested SQL pattern the agent can load when it needs it. Patterns are versioned and
+            tested like code.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">3. A secure access layer</h3>
+        <p class="resume-item-copy">
+            An MCP server between the agent and your data: read-only SQL, every query validated before it runs, limits
+            on cost and rate, authentication, and query logging. Error messages are written so the model can correct its
+            own mistakes.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">4. An accuracy test set</h3>
+        <p class="resume-item-copy">
+            A set of real questions from your team with expected answers. It runs on every change, so you know how good
+            the agent is today and notice when something breaks. Valid SQL is not the same as a correct answer.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="packages">Packages</h2>
+    </header>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Assessment · about 1 week</h3>
+        <p class="resume-item-copy">
+            We look at your data, the questions your team wants answered, and the risks. You get:
+        </p>
+        <ul class="resume-item-list">
+            <li>A review of your data model and documentation from an agent's point of view</li>
+            <li>A first test set of 20–30 real questions, run against your data with a current model</li>
+            <li>A prioritized plan: what to fix, what to build, effort and cost</li>
+        </ul>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Build · 4–6 weeks</h3>
+        <p class="resume-item-copy">
+            I build the four building blocks with your team, in your infrastructure. You get:
+        </p>
+        <ul class="resume-item-list">
+            <li>A semantic layer for the agreed scope, versioned with your data models</li>
+            <li>A library of tested query patterns for your business logic</li>
+            <li>A production-ready MCP server: read-only, validated, authenticated, logged, deployed with CI/CD</li>
+            <li>An automated accuracy test set with a baseline score</li>
+            <li>Documentation and a hand-over session, so your team can extend it</li>
+        </ul>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Ongoing · optional</h3>
+        <p class="resume-item-copy">
+            New questions turn into new patterns and test cases, and the agent is re-tested whenever models or your data
+            change. Monthly, cancel any time.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="proof">Built and running in production</h2>
+    </header>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Shibui Finance, my own product</h3>
+        <p class="resume-item-copy">
+            A public MCP server that makes 60+ years of US stock market data queryable in plain English from Claude,
+            listed in the official MCP Registry. It runs on exactly this approach: a semantic layer on dbt, PostgreSQL and
+            DuckDB, a library of tested SQL patterns, read-only SQL with validation before every query, and rate limiting
+            with an open-source module I wrote.
+        </p>
+        <ul class="resume-item-list">
+            <li>46,000 production queries in the first six months</li>
+            <li>3–5% error rate depending on the calling model, mostly corrected by the model itself</li>
+        </ul>
+        <p class="resume-item-copy">
+            What I learned along the way:
+            <a href="https://hackernoon.com/what-46000-production-queries-taught-us-about-llm-generated-sql">What 46,000
+            production queries taught us about LLM-generated SQL</a> (HackerNoon). Rate limiting module:
+            <a href="https://github.com/Shibui-Finance/caddy-jsonrpc-matcher">caddy-jsonrpc-matcher</a> on GitHub.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">15 years of data platforms behind it</h3>
+        <p class="resume-item-copy">
+            Agent-ready data is only as good as the data underneath. I've built data warehouses, data lakes and pipelines
+            since 2011 for clients in automotive, chemicals, media, market research and telecommunications, and LLM-based
+            workflows that extracted data from ~120,000 documents for a supply chain platform. See my
+            <a href="/#projects">projects</a> for details.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="faq">Common questions</h2>
+    </header>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Does our data leave our infrastructure?</h3>
+        <p class="resume-item-copy">
+            The MCP server and the data stay in your cloud or data center. Which model you connect, and under which
+            data-processing terms, is your decision; the access layer works the same way with any MCP-capable client.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">Which databases do you work with?</h3>
+        <p class="resume-item-copy">
+            Anything you can query with SQL. I've worked most with PostgreSQL, DuckDB, Athena and Spark-based data lakes
+            on AWS and Google Cloud.
+        </p>
+    </div>
+
+    <div class="resume-item">
+        <h3 class="resume-item-title">We don't have a clean data warehouse yet. Is this too early?</h3>
+        <p class="resume-item-copy">
+            The assessment will tell you. If the foundation needs work first, I can build that too: data platforms are
+            what I've built since 2011. See <a href="services">services</a>.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="content-section">
+
+    <header class="section-header">
+        <h2 id="next-steps">Next Steps</h2>
+    </header>
+
+    <div class="resume-item">
+        <p class="resume-item-copy">
+            Want to know whether your data is ready for AI agents? Book a free 30-minute call. We talk through your data,
+            your use cases and whether the assessment makes sense for you, with no obligation. You can also call me at
+            <a href="tel:+493041936978">+49 30 4193 6978</a> or email <a href="mailto:hello@crichter.io">hello@crichter.io</a>.
+        </p>
+        <p class="resume-item-copy">
+            Want to forward this to your team? Here is a <a href="agent-ready-data.pdf">two-page PDF summary</a>.
+        </p>
+    </div>
+
+    {% if site.resume_looking_for_work == 'yes' %}
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/chrrichter/30min'});return false;"
+       class="contact-button no-print"
+       style="background-color: orange"
+       itemprop="email">Book meeting</a>
+    {% endif %}
+
+</section>
