@@ -31,7 +31,7 @@ Jekyll 4.4 (plain `jekyll` gem, no `github-pages`) needs Ruby >= 3.2. Local Ruby
 AWS Amplify app `resume` (`drpwo2606hncl`, eu-central-1) auto-builds branch `cv` and serves `crichter.io` / `www.crichter.io`.
 **Pushing to `origin/cv` deploys to production.** Check a deploy with
 `aws --profile richter amplify list-jobs --app-id drpwo2606hncl --branch-name cv`.
-Builds run in the custom image `public.ecr.aws/docker/library/ruby:3.4` (app env var `_CUSTOM_IMAGE`) with the build spec stored in the Amplify console (`bundle install`, `bundle exec jekyll build`, artifacts in `_site`).
+Builds use the build spec in `amplify.yml` (repo root, excluded from the site), which overrides any build spec in the Amplify console. The build image can't be set there: it is the custom image `public.ecr.aws/docker/library/ruby:3.4`, set in the console as app env var `_CUSTOM_IMAGE`.
 
 ## Architecture
 

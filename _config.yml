@@ -13,6 +13,7 @@ exclude:
   - CLAUDE.md
   - README.md
   - Dockerfile
+  - amplify.yml
 
 # Resume settings
 resume_avatar:                  "true"
